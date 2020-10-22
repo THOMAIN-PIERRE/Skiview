@@ -1,0 +1,65 @@
+<ScrollView>
+    <GridLayout class="page__content" class="condition" rows="60,150,300,300,270,100">
+        <Label row="0" text="CONDITIONS GENERALES D'UTILISATION" textWrap="true"></Label>
+        <Label row="1" class="page__content-placeholder" text="Primi igitur omnium statuuntur Epigonus et Eusebius ob nominum gentilitatem oppressi. praediximus enim Montium sub ipso vivendi c fabricarum culpasse tribunos ut adminicula futurae molitioni pollicitos." color="black" textWrap="true"></Label>
+        <Label row="2" class="page__content-placeholder" text="Ardeo, mihi credite, Patres conscripti (id quod vosmet de me existimatis et facitis ipsi) incredibili quodam amore patriae, qui me amor et subvenire olim impendentibus periculis maximis cum dimicatione capitis, et rursum, cum omnia tela undique esse intenta in patriam viderem, subire coegit atque excipere unum pro universis. Hic me meus in rem publicam animus pristinus ac perennis cum C. Caesare reducit, reconciliat, restituit in gratiam." color="black" textWrap="true"></Label>
+        <Label row="3" class="page__content-placeholder" text="Mirdeo, mihi credite, Patres conscripti (id quod vosmet de me existimatis et facitis ipsi) incredibili quodam amore patriae, qui me amor et subvenire olim impendentibus periculis maximis cum dimicatione capitis, et rursum, cum omnia tela undique esse intenta in patriam viderem, subire coegit atque excipere unum pro universis. Hic me meus in rem publicam animus pristinus ac perennis cum C. Caesare reducit, reconciliat, restituit in gratiam." color="black" textWrap="true"></Label>
+        <Label row="4" class="page__content-placeholder" text="Aled ut que laudantium, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut fugit, sed quia consequuntur magni dolores eos qui ratione nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor, consectetur, adipisci velit, sed non numquam aliquam quaerat voluptatem." color="black" textWrap="true"></Label>
+        <Label row="5" class="page__content-placeholder" text="" color="black" textWrap="true"></Label>
+        <!-- <Button [nsRouterLink]="['/utilisateur/choixstation']" text="J'ACCEPTE" backgroundColor="#0DF24D" color="white" fontSize="20rem" class="soumission" marginTop="66%" marginBottom="10%"></Button>
+        <Button [nsRouterLink]="['/utilisateur/connexion']" text="JE REFUSE" backgroundColor="#0DF24D" color="white" fontSize="20rem" class="soumission" marginTop="66%" marginBottom="10%"></Button> -->
+    </GridLayout> 
+</ScrollView> 
+
+<GridLayout verticalAlignment="bottom">
+    <GridLayout columns="*, *" height="70"  backgroundColor="#FFFF00">
+        <GridLayout  col="0" #tabHighlight>
+        </GridLayout>
+        <GridLayout col="0" backgroundColor="#000000">
+            <Label [nsRouterLink]="['/carnet/formulaire']" col="0" row="0" text="&#xf13a;" class="nt-icon fas" verticalAlignment="center" horizontalAlignment="center"></Label>
+            <!-- <Image #image1 src="~/app/images/infos.png" height="60" width="60"></Image> -->
+        </GridLayout>
+        <GridLayout col="1" backgroundColor="#000000">
+            <Label [nsRouterLink]="['/carnet']" col="1" row="0" text="&#xf057;" class="nt-icon fas" verticalAlignment="center" horizontalAlignment="center"></Label>
+            <!-- <Image #image2 src="~/app/images/locaDanger.png" height="60" width="60"></Image> -->
+        </GridLayout>
+        
+    </GridLayout>
+</GridLayout>
+
+
+
+
+
+    <!-- <GridLayout rows="*" columns="*,*" id="basDePage">
+        <Label [nsRouterLink]="['/carnet/formulaire']" col="0" row="0" text="&#xf13a;" class="nt-icon fas"></Label>
+        <Label [nsRouterLink]="['/carnet']" col="1" row="0" text="&#xf057;" class="nt-icon fas"></Label>
+    </GridLayout> -->
+
+
+
+
+
+<!-- <ScrollView>
+    <GridLayout class="page__content" rows="200,200,200,90" class="condition">
+
+        <Label class="page__content-placeholder"
+            text="   L’application Skiview vous permet d’enregistrer des données cruciales concernant votre état de santé susceptibles de faciliter,d’améliorer, de sécuriser votre prise en charge en cas de blessure sur le domaine skiable. "
+            row="0" color="black" textWrap="true"></Label>
+        <Label class="page__content-placeholder"
+            text="    Vous êtes libre de choisir d’utiliser ou non ce service. Le formulaire de renseignement des données ne contient aucun champs obligatoire. C’est vous qui décidez des informations que vous consentez à partager avec nos équipes."
+            row="1" color="black" textWrap="true"></Label>
+        <Label class="page__content-placeholder"
+            text="    Ces informations leur permettront de vous prendre en charge plus efficacement et de façon personnalisée. Elles leur permettront également d’assurer un meilleur passage de relais avec les ambulanciers et/ou le médecin qui vous prendrons en charge."
+            row="2" color="black" textWrap="true"></Label>
+        <Label class="page__content-placeholder"
+            text=""
+            row="3" color="black" textWrap="true"></Label>
+
+    </GridLayout>
+
+</ScrollView>
+<GridLayout>
+    <Button [nsRouterLink]="['/carnet/formulaire']" text="Accepter les conditions" backgroundColor="#0DF24D" color="white" fontSize="Large"
+        class="soumission" marginTop="66%" marginBottom="10%"></Button>
+</GridLayout> -->

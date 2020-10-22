@@ -1,0 +1,50 @@
+
+<GridLayout marginBottom="15%">
+    <ScrollView>
+        <StackLayout>
+            <StackLayout class="hr"></StackLayout>
+            <GridLayout columns="*" class="mes_signalements">
+                <Label col="0" text="20/04/2019 11:35" class="date_heure"></Label>
+            </GridLayout>
+            <GridLayout [nsRouterLink]="['/utilisateur/station']" columns="auto, 200">
+                <ContentView col="0" id="myDanger1" width="110rem" height="110rem" backgroundColor="#C4C4C4"></ContentView>
+                <Label col="1" text="SIGNALER DANGER" class="declaration"></Label>
+                <Label col="1" text="Avalanche" class="categorie"></Label>
+                <Label col="1" text="STATUT : PRIS EN COMPTE" class="statut"></Label>
+            </GridLayout>
+            <StackLayout>
+                <Label text="Latitude: 47.12317663" color="#000000" fontSize="30px"></Label>
+                <Label text="Longitude: 2.44583129" color="#000000" fontSize="30px"></Label>
+            </StackLayout>
+            <StackLayout>
+                <Image class="galerie" src="https://www.telegraph.co.uk/content/dam/Travel/ski/Crans-Montana-avalanche-skiers-KEYSTONE-ANTHONY%20ANEX.jpg?imwidth=450"  width="800px" stretch="aspectFit"></Image>
+            </StackLayout>
+        </StackLayout>
+    </ScrollView>
+</GridLayout>
+<!-- <StackLayout>
+    <BottomNavigation height="100%">
+        <TabStrip>
+            <TabStripItem>
+                <Label text="&#xf015;" class="nt-icon fas"></Label>
+            </TabStripItem>
+        </TabStrip>
+    </BottomNavigation>
+</StackLayout> -->
+
+
+<!-- <GridLayout rows="*" columns="*">
+    <Label [nsRouterLink]="['/utilisateur/station']" col="0" row="0" text="&#xf015;" class="nt-icon fas" id="basDePage"></Label>
+</GridLayout> -->
+
+
+<GridLayout verticalAlignment="bottom">
+    <GridLayout columns="*" height="70"  backgroundColor="#FFFF00">
+        <GridLayout  col="0" #tabHighlight>
+        </GridLayout>
+        <GridLayout col="0" backgroundColor="#000000">
+            <Label [nsRouterLink]="['/utilisateur/station']" col="0" row="0" text="&#xf015;" class="nt-icon fas"  textAlign="center" verticalAlignment="center" horizontalAlignment="center"></Label>
+            <!-- <Image #image1 src="~/app/images/infos.png" height="60" width="60"></Image> -->
+        </GridLayout>   
+    </GridLayout>
+</GridLayout>

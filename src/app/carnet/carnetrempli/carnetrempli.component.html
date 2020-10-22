@@ -1,0 +1,109 @@
+<ScrollView>
+    <GridLayout class="settings__page__content">
+            <StackLayout>
+                <GridLayout columns="160, 200" rows="50,50,50,50">
+                    <Image src="https://www.breizh-info.com/wp-content/uploads/2019/09/vol_identite.jpg" width="40%" height="30%" col="0" row="0" id="myView" rowspan="3" class="img-circle"></Image>
+                    <Label col="1" row="0" [text]="carnetServ.dossierSante.nom" class="nomPrenom_carnet" marginLeft="5%"></Label>
+                    <Label col="1" row="1" [text]="carnetServ.dossierSante.prenom" class="nomPrenom_carnet" marginLeft="5%"></Label>
+                    <Label col="1" row="2" [text]="carnetServ.dossierSante.age" class="nomPrenom_carnet" marginLeft="5%"></Label>
+                    <Label col="1" row="3" [text]="carnetServ.dossierSante.tel" class="nomPrenom_carnet" marginLeft="5%"></Label>
+                </GridLayout>
+                <GridLayout columns="auto, *,*">
+                    <Label col="0" marginTop="6%" class="infosCarnet" text="Groupe sanguin :"></Label>
+                    <Label col="1" text="&#xf043;" class="nt-icon fas" id="goutte_de_sang"></Label>
+                    <Label col="1" [text]="carnetServ.dossierSante.groupe" class="nt-icon fas" id="groupe"></Label>
+                </GridLayout>
+                <GridLayout columns="auto, *">
+                    <Label col="0" class="infosCarnet" text="Taille (cm) :"></Label>
+                    <Label col="1" [text]="carnetServ.dossierSante.taille" class="groupe_sanguin"></Label>
+                </GridLayout>
+                <GridLayout columns="auto, *">
+                    <Label col="0" class="infosCarnet" text="Poids (kg) :"></Label>
+                    <Label col="1" [text]="carnetServ.dossierSante.poids" class="groupe_sanguin"></Label>
+                </GridLayout>
+                <GridLayout columns="auto, *">
+                    <Label col="0" class="infosCarnet" text="Donneur d'organe :"></Label>
+                    <Label col="1" [text]="carnetServ.dossierSante.donneur" class="groupe_sanguin"></Label>
+                </GridLayout>
+                <GridLayout columns="auto, *">
+                    <Label col="0" class="infosCarnet" text="Allergie(s) :"></Label>
+                    <Label col="1" [text]="carnetServ.dossierSante.allergie" class="groupe_sanguin" textWrap="true"></Label>
+                </GridLayout>
+                <GridLayout columns="auto, *">
+                    <Label col="0" class="infosCarnet" text="Pathologie(s):"></Label>
+                    <Label col="1" [text]="carnetServ.dossierSante.pathologie" class="groupe_sanguin" textWrap="true"></Label>
+                </GridLayout>
+                <GridLayout columns="auto, *">
+                    <Label col="0" class="infosCarnet" text="Traitement(s) :"></Label>
+                    <Label col="1" [text]="carnetServ.dossierSante.traitement" class="groupe_sanguin" textWrap="true"></Label>
+                </GridLayout>
+                <GridLayout columns="auto, *">
+                    <Label col="0" class="infosCarnet" text="Nom contact :"></Label>
+                    <Label col="1" [text]="carnetServ.dossierSante.nom_contact" class="groupe_sanguin"></Label>
+                </GridLayout>
+                <GridLayout columns="auto, *">
+                    <Label col="0" class="infosCarnet" text="Prénom contact :"></Label>
+                    <Label col="1" [text]="carnetServ.dossierSante.prenom_contact" class="groupe_sanguin"></Label>    
+                </GridLayout>
+                <GridLayout columns="auto, *">
+                    <Label col="0" class="infosCarnet" text="Téléphone contact :"></Label>
+                    <Label col="1" [text]="carnetServ.dossierSante.tel_contact" class="groupe_sanguin"></Label>    
+                </GridLayout>
+                <GridLayout>
+                    <Button [nsRouterLink]="['/carnet/cgu']" row="0" text="RENSEIGNER MON CARNET" class="btn btn-warning" id="button_health_book"></Button> 
+                </GridLayout>
+                <!-- <StackLayout class="hr" marginBottom="11px"></StackLayout> -->
+                <!-- <GridLayout rows="*" columns="*,*,*">
+                    <Label [nsRouterLink]="['/informations']" col="0" row="0" text="&#xf05a;" class="nt-icon fas" id="basDePage"></Label>
+                    <Label [nsRouterLink]="['/danger']" col="1" row="0" text="&#xf071;" class="nt-icon fas" id="basDePage"></Label>
+                    <Label [nsRouterLink]="['/sos']" col="2" row="0" text="&#xf479;" class="nt-icon fas" id="basDePage"></Label>
+                </GridLayout>-->
+
+                <GridLayout verticalAlignment="bottom">
+                    <GridLayout columns="*, *, *" height="70"  backgroundColor="#FFFF00">
+                        <GridLayout  col="0" #tabHighlight>
+                        </GridLayout>
+                        <GridLayout col="0" backgroundColor="#000000">
+                            <Image #image1 src="~/app/images/infos.png" [nsRouterLink]="['/informations']" height="60"
+                                width="60"></Image>
+                        </GridLayout>
+                        <GridLayout col="1" backgroundColor="#000000">
+                            <Image #image2 src="~/app/images/locaDanger.png" [nsRouterLink]="['/danger']" height="60"
+                                width="60"></Image>
+                        </GridLayout>
+                        <GridLayout col="2" backgroundColor="#000000">
+                            <Image #image3 src="~/app/images/locaSecours.png" [nsRouterLink]="['/sos']" height="60"
+                                width="60"></Image>
+                        </GridLayout>
+                    </GridLayout>
+                </GridLayout>
+
+
+
+
+
+
+            </StackLayout>
+        </GridLayout>
+     </ScrollView>            
+                
+                <!-- <BottomNavigation class="bottomNav" height="100%">
+                    <StackLayout class="hr" height="50%"></StackLayout>
+                    <TabStrip>
+                        <TabStripItem>
+                            <Label col="0" text="&#xf05a;" class="nt-icon fas"></Label>
+                        </TabStripItem>
+                        <TabStripItem>
+                            <Label col="1" text="&#xf041;" class="nt-icon fas"></Label>
+                        </TabStripItem>
+                        <TabStripItem>
+                            <Label col="2" text="&#xf3c5;" class="nt-icon fas"></Label>
+                        </TabStripItem>
+                    </TabStrip>
+                </BottomNavigation> -->
+     
+                <!-- <GridLayout rows="*" columns="*,*,*">
+                    <Label [nsRouterLink]="['/informations']" col="0" row="0" text="&#xf05a;" class="nt-icon fas" id="basDePage"></Label>
+                    <Label [nsRouterLink]="['/danger']" col="1" row="0" text="&#xf071;" class="nt-icon fas" id="basDePage"></Label>
+                    <Label [nsRouterLink]="['/sos']" col="2" row="0" text="&#xf479;" class="nt-icon fas" id="basDePage"></Label>
+                </GridLayout> -->

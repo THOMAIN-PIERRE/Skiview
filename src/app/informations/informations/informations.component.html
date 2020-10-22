@@ -1,0 +1,66 @@
+<ActionBar class="actionBarSignalement">
+    <!-- 
+    Use the NavigationButton as a side-drawer button in Android
+    because ActionItems are shown on the right side of the ActionBar
+    -->
+    <NavigationButton ios:visibility="collapsed" icon="res://menu" (tap)="onDrawerButtonTap()"></NavigationButton>
+    <!-- 
+    Use the ActionItem for IOS with position set to left. Using the
+    NavigationButton as a side-drawer button in iOS is not possible,
+    because its function is to always navigate back in the application.
+    -->
+    <ActionItem icon="res://menu" android:visibility="collapsed" (tap)="onDrawerButtonTap()" ios.position="left">
+    </ActionItem>
+    <Label class="blackPage" text="INFORMATIONS"></Label>
+</ActionBar>
+<StackLayout>
+    <Tabs>
+        <TabStrip>
+            <TabStripItem>
+                <Label text="METEO"></Label>
+            </TabStripItem>
+            <TabStripItem>
+                <Label text="NEIGE"></Label>
+            </TabStripItem>
+            <TabStripItem>
+                <Label text="PISTES"></Label>
+                <!-- <Label text="&#xf7c9;" class="nt-icon fas"></Label> -->
+            </TabStripItem>
+            <TabStripItem>
+                <Label text="REMONTEES"></Label>
+                <!-- <Label text="" class="nt-icon fas"></Label> -->
+            </TabStripItem>
+            <TabStripItem>
+                <Label text="PLAN"></Label>
+                <!-- <Label text="" class="nt-icon fas"></Label> -->
+            </TabStripItem>
+        </TabStrip>
+        <TabContentItem>
+            <GridLayout>
+                <ns-meteo></ns-meteo>
+            </GridLayout>
+        </TabContentItem>
+        <TabContentItem>
+            <GridLayout>
+                <ns-neige></ns-neige>
+            </GridLayout>
+        </TabContentItem>
+        <TabContentItem>
+            <GridLayout>
+                <ns-pistes></ns-pistes>
+            </GridLayout>
+        </TabContentItem>
+        <TabContentItem>
+            <GridLayout>
+                <ns-remontees></ns-remontees>
+            </GridLayout>
+        </TabContentItem>
+        <TabContentItem>
+            <GridLayout>
+                <ns-plan></ns-plan>
+            </GridLayout>
+        </TabContentItem>
+    </Tabs>
+</StackLayout>
+
+

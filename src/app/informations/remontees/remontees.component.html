@@ -1,0 +1,107 @@
+<ScrollView>
+<StackLayout height= 1000vh>
+    <GridLayout backgroundColor="white" columns="*" rows="40,1" marginBottom="2vh">
+        <Label color="black" class="page__content-placeholder" text="Ouverture des remontées" row="0" column="0" colspan="4" 
+        fontWeight="Bold" textAlign="center"></Label>
+        <StackLayout class="hr" row="1" colspan="4"></StackLayout>
+    </GridLayout>
+<GridLayout columns="*,*,*,*" rows="80,80" class="encadre" borderRadius="10%" marginTop="1%" marginLeft="5%"
+marginRight="5%">
+    <!-- <Label color="black" class="page__content-placeholder" text="Ouverture des remontées" row="0" column="0" colspan="4" 
+    fontWeight="Bold" textAlign="center"></Label>
+    <StackLayout class="hr" row="1" colspan="4"></StackLayout> -->
+    <!-- <Image row="2" column="1"  src=""></Image>
+    <Image row="2" column="2"  src=""></Image>
+    <Image row="2" column="3"  src=""></Image>
+    <Image row="2" column="4"  src=""></Image> -->
+    <Label color="black" class="page__content-placeholder" id="iconTapis" text="" row="0" column="0" color="white"></Label>
+    <Label color="black" class="page__content-placeholder" id="iconTeleski" text="" row="0" column="1" color="white"></Label>
+    <Label color="black" class="page__content-placeholder" id="iconTelesiege" text="" row="0" column="2" color="white"></Label>
+    <Label color="black" class="page__content-placeholder" id="iconTelecabine" text="" row="0" column="3" color="white"></Label>
+
+    <Label color="black" class="page__content-placeholder" text="2/2" row="1" column="0" fontWeight="Bold" fontSize="25"></Label>
+    <Label color="black" class="page__content-placeholder" text="7/7" row="1" column="1" fontWeight="Bold" fontSize="25"></Label> 
+    <Label color="black" class="page__content-placeholder" text="14/15" row="1" column="2" fontWeight="Bold" fontSize="25"></Label> 
+    <Label color="black" class="page__content-placeholder" text="2/3" row="1" column="3" fontWeight="Bold" fontSize="25"></Label>   
+</GridLayout>
+<GridLayout backgroundColor="#C4C4C4" rows="50,50,50,50,50,50,50,50,50,50,50,50" columns="*,*,*" marginTop="2vh">
+    <Label color="black" class="page__content-placeholder" text="BEARNAIS" row="0" column="0" fontWeight="Bold"></Label>
+    <Label class="page__content-placeholder" id="status_open" text="Ouvert" row="0" column="1" fontWeight="Bold" paddingLeft="20%" paddingRight="20%"></Label>
+    <Label color="black" class="page__content-placeholder" text="9:00" row="0" column="2" fontWeight="Bold"></Label>
+    <Label class="page__content-placeholder" text="Maintenon" color="#008000" row="1" column="0" fontWeight="Bold"></Label>
+    <Label class="page__content-placeholder" text="Bearnais" color="#0000FF" row="1" column="1" fontWeight="Bold"></Label>
+    <Label class="page__content-placeholder" text="Grenouilles" color="#0000FF" row="1" column="2"  fontWeight="Bold"></Label>
+    <Label color="black" class="page__content-placeholder" text="SAPIN" row="2" column="0" fontWeight="Bold"></Label>
+    <Label class="page__content-placeholder" id="status_open" text="Ouvert" row="2" column="1" fontWeight="Bold" paddingLeft="20%" paddingRight="20%"></Label>
+    <Label color="black" class="page__content-placeholder" text="9:00" row="2" column="2" fontWeight="Bold"></Label>
+    <Label color="black" class="page__content-placeholder" text="BRACA" row="3" column="0" fontWeight="Bold"></Label>
+    <Label class="page__content-placeholder" id="status_open" text="Ouvert" row="3" column="1" fontWeight="Bold" paddingLeft="20%" paddingRight="20%"></Label>
+    <Label color="black" class="page__content-placeholder" text="9:00" row="3" column="2" fontWeight="Bold"></Label>
+    <Label color="black" class="page__content-placeholder" text="PIQUETTE" row="4" column="0" fontWeight="Bold"></Label>
+    <Label class="page__content-placeholder" id="status_open" text="Ouvert" row="4" column="1" fontWeight="Bold" paddingLeft="20%" paddingRight="20%"></Label>
+    <Label color="black" class="page__content-placeholder" text="9:15" row="4" column="2" fontWeight="Bold"></Label>
+    <Label color="black" class="page__content-placeholder" text="TURON" row="5" column="0" fontWeight="Bold"></Label>
+    <Label class="page__content-placeholder" id="status_closed" text="Fermé" row="5" column="1" fontWeight="Bold" paddingLeft="20%" paddingRight="20%"></Label>
+    <Label color="black" class="page__content-placeholder" text="9:00" row="5" column="2" fontWeight="Bold"></Label>
+    <Label color="black" class="page__content-placeholder" text="BEARNAIS" row="6" column="0" fontWeight="Bold"></Label>
+    <Label class="page__content-placeholder" id="status_open" text="Ouvert" row="6" column="1" fontWeight="Bold" paddingLeft="20%" paddingRight="20%"></Label>
+    <Label color="black" class="page__content-placeholder" text="9:00" row="6" column="2" fontWeight="Bold"></Label>
+    <Label class="page__content-placeholder" text="Maintenon  |" color="#008000" row="7" column="0" fontWeight="Bold"></Label>
+    <Label class="page__content-placeholder" text="Bearnais  |" color="#0000FF" row="7" column="1" fontWeight="Bold"></Label>
+    <Label class="page__content-placeholder" text="Grenouilles" color="#0000FF" row="7" column="2"  fontWeight="Bold"></Label>
+    <Label color="black" class="page__content-placeholder" text="SAPIN" row="8" column="0" fontWeight="Bold"></Label>
+    <Label class="page__content-placeholder" id="status_open" text="Ouvert" row="8" column="1" fontWeight="Bold" paddingLeft="20%" paddingRight="20%"></Label>
+    <Label color="black" class="page__content-placeholder" text="9:00" row="8" column="2" fontWeight="Bold"></Label>
+    <Label color="black" class="page__content-placeholder" text="BRACA" row="9" column="0" fontWeight="Bold"></Label>
+    <Label class="page__content-placeholder" id="status_open" text="Ouvert" row="9" column="1" fontWeight="Bold" paddingLeft="20%" paddingRight="20%"></Label>
+    <Label color="black" class="page__content-placeholder" text="9:00" row="9" column="2" fontWeight="Bold"></Label>
+    <Label color="black" class="page__content-placeholder" text="PIQUETTE" row="10" column="0" fontWeight="Bold"></Label>
+    <Label class="page__content-placeholder" id="status_open" text="Ouvert" row="10" column="1" fontWeight="Bold" paddingLeft="20%" paddingRight="20%"></Label>
+    <Label color="black" class="page__content-placeholder" text="9:15" row="10" column="2" fontWeight="Bold"></Label>
+    <Label color="black" class="page__content-placeholder" text="TURON" row="11" column="0" fontWeight="Bold"></Label>
+    <Label class="page__content-placeholder" id="status_closed" text="Fermé" row="11" column="1" fontWeight="Bold" paddingLeft="20%" paddingRight="20%"></Label>
+    <Label color="black" class="page__content-placeholder" text="9:00" row="11" column="2" fontWeight="Bold"></Label>
+</GridLayout>
+</StackLayout>
+</ScrollView>
+<!-- <GridLayout backgroundColor="black" rows="200" height="10%" marginTop="92%" marginBottom="5" columns="*,*,*">
+    <Label col="0" text="&#xf05a;" [nsRouterLink]="['/informations']" marginLeft="10%" class="nt-icon fas"></Label>
+    <Label col="1" text="&#xf071;" [nsRouterLink]="['/danger']" marginLeft="10%" class="nt-icon fas"></Label>
+    <Label col="2" text="&#xf479;" [nsRouterLink]="['/sos']" marginLeft="10%" class="nt-icon fas"></Label>
+</GridLayout> -->
+<!-- <StackLayout>
+    <BottomNavigation>
+        <TabStrip>
+            <TabStripItem>
+                <Label col="0" text="&#xf05a;" class="nt-icon fas"></Label>
+            </TabStripItem>
+            <TabStripItem>
+                <Label col="1" text="&#xf041;" class="nt-icon fas"></Label>
+            </TabStripItem>
+            <TabStripItem>
+                <Label col="2" text="&#xf3c5;" class="nt-icon fas"></Label>
+            </TabStripItem>
+        </TabStrip>
+    </BottomNavigation>
+</StackLayout> -->
+
+
+
+<GridLayout verticalAlignment="bottom">
+    <GridLayout columns="*, *, *" height="70"  backgroundColor="#FFFF00">
+        <GridLayout  col="0" #tabHighlight>
+        </GridLayout>
+        <GridLayout col="0" backgroundColor="#000000">
+            <Image #image1 src="~/app/images/infos.png" [nsRouterLink]="['/informations']" height="60"
+                width="60"></Image>
+        </GridLayout>
+        <GridLayout col="1" backgroundColor="#000000">
+            <Image #image2 src="~/app/images/locaDanger.png" [nsRouterLink]="['/danger']" height="60"
+                width="60"></Image>
+        </GridLayout>
+        <GridLayout col="2" backgroundColor="#000000">
+            <Image #image3 src="~/app/images/locaSecours.png" [nsRouterLink]="['/sos']" height="60"
+                width="60"></Image>
+        </GridLayout>
+    </GridLayout>
+</GridLayout>

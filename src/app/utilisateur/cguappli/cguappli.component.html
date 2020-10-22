@@ -1,0 +1,68 @@
+<ScrollView>
+    <GridLayout class="page__content" class="condition" rows="60,150,300,300,270,100">
+        <Label row="0" class="titreCGU" text="CONDITIONS GENERALES D'UTILISATION" textAlign="center" textWrap="true"></Label>
+        <Label row="1" class="page__content-placeholder" text="Primi igitur omnium statuuntur Epigonus et Eusebius ob nominum gentilitatem oppressi. praediximus enim Montium sub ipso vivendi c fabricarum culpasse tribunos ut adminicula futurae molitioni pollicitos." color="black" textWrap="true"></Label>
+        <Label row="2" class="page__content-placeholder" text="Ardeo, mihi credite, Patres conscripti (id quod vosmet de me existimatis et facitis ipsi) incredibili quodam amore patriae, qui me amor et subvenire olim impendentibus periculis maximis cum dimicatione capitis, et rursum, cum omnia tela undique esse intenta in patriam viderem, subire coegit atque excipere unum pro universis. Hic me meus in rem publicam animus pristinus ac perennis cum C. Caesare reducit, reconciliat, restituit in gratiam." color="black" textWrap="true"></Label>
+        <Label row="3" class="page__content-placeholder" text="Mirdeo, mihi credite, Patres conscripti (id quod vosmet de me existimatis et facitis ipsi) incredibili quodam amore patriae, qui me amor et subvenire olim impendentibus periculis maximis cum dimicatione capitis, et rursum, cum omnia tela undique esse intenta in patriam viderem, subire coegit atque excipere unum pro universis. Hic me meus in rem publicam animus pristinus ac perennis cum C. Caesare reducit, reconciliat, restituit in gratiam." color="black" textWrap="true"></Label>
+        <Label row="4" class="page__content-placeholder" text="Aled ut que laudantium, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut fugit, sed quia consequuntur magni dolores eos qui ratione nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor, consectetur, adipisci velit, sed non numquam aliquam quaerat voluptatem." color="black" textWrap="true"></Label>
+        <Label row="5" class="page__content-placeholder" text="" color="black" textWrap="true"></Label>
+        <!-- <Button [nsRouterLink]="['/utilisateur/choixstation']" text="J'ACCEPTE" backgroundColor="#0DF24D" color="white" fontSize="20rem" class="soumission" marginTop="66%" marginBottom="10%"></Button>
+        <Button [nsRouterLink]="['/utilisateur/connexion']" text="JE REFUSE" backgroundColor="#0DF24D" color="white" fontSize="20rem" class="soumission" marginTop="66%" marginBottom="10%"></Button> -->
+    </GridLayout> 
+</ScrollView> 
+    <!-- <GridLayout rows="*" columns="*,*" id="basDePage">
+        <Label [nsRouterLink]="['/utilisateur/choixstation']" col="0" row="0" text="&#xf13a;" class="nt-icon fas"></Label>
+        <Label [nsRouterLink]="['/utilisateur/connexion']" col="1" row="0" text="&#xf057;" class="nt-icon fas"></Label>
+    </GridLayout> -->
+
+    <GridLayout verticalAlignment="bottom">
+        <GridLayout columns="*, *" height="70"  backgroundColor="#FFFF00">
+            <GridLayout  col="0" #tabHighlight></GridLayout>
+            <GridLayout col="0" backgroundColor="#000000">
+                <Label [nsRouterLink]="['/utilisateur/choixstation']" col="0" row="0" text="&#xf13a;" class="nt-icon fas" verticalAlignment="center" horizontalAlignment="center"></Label>
+            </GridLayout>
+            <GridLayout col="1" backgroundColor="#000000">
+                <Label [nsRouterLink]="['/utilisateur/connexion']" col="1" row="0" text="&#xf057;" class="nt-icon fas" verticalAlignment="center" horizontalAlignment="center"></Label>
+            </GridLayout>  
+        </GridLayout>
+    </GridLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- <StackLayout>
+    <BottomNavigation>
+        <TabStrip>
+            <TabStripItem>
+                <Button text="J'ACCEPTE" backgroundColor="#0DF24D" color="white" fontSize="20rem"></Button>
+            </TabStripItem>
+            <TabStripItem>
+                <Button text="JE REFUSE" backgroundColor="#FF0000" color="white" fontSize="20rem"></Button>
+            </TabStripItem>
+            </TabStrip>
+            <TabContentItem>
+            <GridLayout>
+                <ns-choixstation></ns-choixstation>
+            </GridLayout>
+        </TabContentItem>
+        <TabContentItem>
+            <GridLayout>
+                <ns-connexion></ns-connexion>
+            </GridLayout>
+        </TabContentItem>
+    </BottomNavigation>
+</StackLayout>
+</ScrollView>
+
+<!-- <GridLayout>
+        <Button [nsRouterLink]="['/utilisateur/choixstation']" text="Accepter ces conditions" backgroundColor="#0DF24D" color="white" fontSize="Large"
+            class="soumission" marginTop="66%" marginBottom="10%"></Button>
+</GridLayout> --> -->

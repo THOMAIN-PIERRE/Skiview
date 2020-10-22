@@ -1,0 +1,30 @@
+<ScrollView>
+    <GridLayout class="page__content" backgroundColor="#3E3F32" >
+        <FlexboxLayout backgroundColor="#3E3F32" flexDirection="row" flexWrap="wrap" justifyContent="space-around"
+            margin-top="50%" rows="200,50,50,50,50">
+            <Label backgroundColor="#3E3F32" class="page__content-placeholder" text="" marginTop="50%"
+                row="0" color="white" fontSize=25px; fontWeight="Bold" marginbottom="10%" marginLeft="100%"></Label>
+            <Label backgroundColor="#3E3F32" class="page__content-placeholder" text="" marginTop="50%"
+                row="1" color="white" fontSize=25px; fontWeight="Bold" marginbottom="10%" marginLeft="100%"></Label>
+            <Label backgroundColor="#3E3F32" class="page__content-placeholder" text="" marginTop="50%"
+                row="2" color="white" fontSize=25px; fontWeight="Bold" marginbottom="10%" marginLeft="100%"></Label>
+
+            <Label backgroundColor="#3E3F32" class="page__content-placeholder" text="La victime est un" marginTop="50%"
+                row="3" color="white" fontSize=25px; fontWeight="Bold" marginbottom="10%" marginLeft="10%"></Label>
+            <ContentView [nsRouterLink]="['/sos/activite']" row="4" textAlign="center" class="bouttonchute"text="ENFANT" width="150em" height="150em" marginLeft="5%"
+                color="white" backgroundColor="#FF0000">
+                <Label class="page__content-placeholder" text="ENFANT" [nsRouterLink]="['/sos/activite']" color="white" fontSize="25em" fontWeight="Bold"
+                    marginbottom="10%" marginLeft="0%" (tap)="natureSosEnfant('Enfant')"></Label>
+            </ContentView>
+            <ContentView row="4" text="Adulte" [nsRouterLink]="['/sos/activite']" class="bouttonchute"width="150em" height="150em" color="white" textAlign="center"
+                marginLeft="0%" backgroundColor="#106D0E">
+
+                <Label class="page__content-placeholder" [nsRouterLink]="['/sos/activite']" text="ADULTE" color="white" fontSize="25em" fontWeight="Bold"
+                    marginbottom="10%" marginLeft="0%"(tap)="natureSosAdulte('Adulte')"></Label>
+            </ContentView>
+        </FlexboxLayout>
+    </GridLayout>
+</ScrollView>
+
+
+

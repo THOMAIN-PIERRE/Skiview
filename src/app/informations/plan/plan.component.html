@@ -1,0 +1,35 @@
+<GridLayout class="page">
+    <StackLayout row="0">
+        <Button text="STATUT DES REMONTEES MECANIQUES" class="btn btn-primary" (tap)="addMarkers()" verticalAlignment="top"></Button>
+    </StackLayout>
+    <contentView height="70%" width="92%">
+        <Mapbox
+          accessToken = "pk.eyJ1IjoidGhvbWFpbiIsImEiOiJjazh6ZG45YjUwYThkM25wcno1YmpzdnM3In0.Wthd0w9I5olqjA_VQjZ6AA"
+          mapStyle = "outdoors"
+          latitude = 42.9773624
+          longitude = -0.7443902
+          zoomLevel = 8
+          showUserLocation = "true"
+          (mapReady) = "onMapReady($event)">
+        </Mapbox>
+    </contentView>
+</GridLayout>
+<GridLayout verticalAlignment="bottom">
+    <GridLayout columns="*, *, *" height="70"  backgroundColor="#FFFF00">
+        <GridLayout  col="0" #tabHighlight>
+        </GridLayout>
+        <GridLayout col="0" backgroundColor="#000000">
+            <Image #image1 src="~/app/images/infos.png" [nsRouterLink]="['/informations']" height="60"
+                width="60"></Image>
+        </GridLayout>
+        <GridLayout col="1" backgroundColor="#000000">
+            <Image #image2 src="~/app/images/locaDanger.png" [nsRouterLink]="['/danger']" height="60"
+                width="60"></Image>
+        </GridLayout>
+        <GridLayout col="2" backgroundColor="#000000">
+            <Image #image3 src="~/app/images/locaSecours.png" [nsRouterLink]="['/sos']" height="60"
+                width="60"></Image>
+        </GridLayout>
+    </GridLayout>
+</GridLayout>
+

@@ -1,0 +1,190 @@
+[
+    {
+        "nom_station": "Courchevel",
+        "pourcentage_domaine_ouvert": 66,
+        "nombre_piste_verte_ouverte": "4/7",
+        "nombre_pistes_rouge_ouverte": "5/7",
+        "nombre_de_pistes_noires_ouverte": "2/7",
+        "nombre_de_pistes_bleues_ouverte": "4/7",
+        "logo_tapis":"https://static.ingenie.fr/images/skiplan/neige/rem_tr_w.png",
+        "logo_télésiége":"https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRQUfGUsmiehDO5tnJ9Gl-hrskE-ULTL2JUnkHZf2mNsFJF0Cuh&usqp=CAU",
+        "logo_téléski":"https://img.over-blog-kiwi.com/2/60/23/21/20171202/ob_acd295_teleski-logo.png",
+        "logo_télécabine":"https://image.flaticon.com/icons/png/512/67/67675.png",
+        "nombre_tapis_ouvert": "1/3",
+        "nombre_teleski_ouvert": "5/7",
+        "nombre_de_telepherique_ouvert": "2/7",
+        "nombre_de_telecabine_ouvert": "4/7",
+        "plan_pistes": "https://www.courchevel.com/themes/custom/courchevel_front/images/infos-pistes/plan-de-piste.png",
+        "détail_pistes": [
+            {
+                "nom_piste": "Verdon",
+                "couleur_piste": "vert",
+                "status_ouverture_piste": "1"
+                
+            },
+            {
+                "nom_piste": "Rama",
+                "couleur_piste": "bleu",
+                "status_ouverture_piste": "1"
+                
+            },
+            {
+                "nom_piste": "Plan du Vah",
+                "couleur_piste": "rouge",
+                "status_ouverture_piste": "1"
+               
+            },
+            {
+                "nom_piste": "Mur",
+                "couleur_piste": "noire",
+                "status_ouverture_piste": "0"
+                
+            }
+        ],
+        "détail_remontées": [
+            {
+                "nom_remontées": "Rocher De L'ombre",
+                "Type_remontées": "Téléski",
+                "status_ouverture_remontées": "1",
+                "heure_ouverture": "9h00"
+            },
+            {
+                "nom_remontées": "Verdons",
+                "Type_remontées": "Télécabine",
+                "status_ouverture_remontées": "1",
+                "heure_ouverture": "10h00"
+            },
+            {
+                "nom_remontées": "Biollay",
+                "Type_remontées": "Télésiége",
+                "status_ouverture_remontées": "0",
+                "heure_ouverture": "9h00"
+            }
+        ]
+    },
+    {
+        "nom_station": "la Mongie",
+        "pourcentage_domaine_ouvert": 50,
+        "nombre_piste_verte_ouverte": "3/6",
+        "nombre_pistes_rouge_ouverte": "4/6",
+        "nombre_de_pistes_noires_ouverte": "0/6",
+        "nombre_de_pistes_bleues_ouverte": "1/6",
+        "logo_tapis":"https://static.ingenie.fr/images/skiplan/neige/rem_tr_w.png",
+        "logo_télésiége":"https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRQUfGUsmiehDO5tnJ9Gl-hrskE-ULTL2JUnkHZf2mNsFJF0Cuh&usqp=CAU",
+        "logo_téléski":"https://img.over-blog-kiwi.com/2/60/23/21/20171202/ob_acd295_teleski-logo.png",
+        "logo_télécabine":"https://image.flaticon.com/icons/png/512/67/67675.png",
+        "nombre_tapis_ouvert": "1/3",
+        "nombre_teleski_ouvert":"5/6",
+        "nombre_de_telepherique_ouvert": "4/8",
+        "nombre_de_telecabine_ouvert": "6/9",
+        
+        "plan_pistes": "https://s3.onthesnow.com/images/trailmaps/les-2-alpes-la-grave/les-2-alpes/20141106032510/large.jpg",
+        "détail_pistes": [
+            {
+                "nom_piste": "Framboisier",
+                "couleur_piste": "vert",
+                "status_ouverture_piste": "1"
+                
+            },
+            {
+                "nom_piste": "Bearnais",
+                "couleur_piste": "vert",
+                "status_ouverture_piste": "1"
+            },
+            {
+                "nom_piste": "Grenouille",
+                "couleur_piste": "rouge",
+                "status_ouverture_piste": "1"
+                
+            },
+            {
+                "nom_piste": "magicien",
+                "couleur_piste": "noire",
+                "status_ouverture_piste": "0"
+               
+            }
+        ],
+        "détail_remontées": [
+            {
+                "nom_remontées": "Victoire",
+                "Type_remontées": "Télésiége",
+                "status_ouverture_remontées": "1",
+                "heure_ouverture": "9h00"
+            },
+            {
+                "nom_remontées": "Grandeur",
+                "Type_remontées": "Télécabine",
+                "status_ouverture_remontées": "0",
+                "heure_ouverture": "10h00"
+            },
+            {
+                "nom_remontées": "Ideal",
+                "Type_remontées": "Téléphérique",
+                "status_ouverture_remontées": "0",
+                "heure_ouverture": "9h00"
+            }
+        ]
+    },
+    {
+        "nom_station": "chamrousse",
+        "pourcentage_domaine_ouvert": 10,
+        "nombre_piste_verte_ouverte": "1/6",
+        "nombre_pistes_rouge_ouverte": "0/6",
+        "nombre_de_pistes_noires_ouverte": "0/6",
+        "nombre_de_pistes_bleues_ouverte": "0/6",
+        "logo_tapis":"https://static.ingenie.fr/images/skiplan/neige/rem_tr_w.png",
+        "logo_télésiége":"https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRQUfGUsmiehDO5tnJ9Gl-hrskE-ULTL2JUnkHZf2mNsFJF0Cuh&usqp=CAU",
+        "logo_téléski":"https://img.over-blog-kiwi.com/2/60/23/21/20171202/ob_acd295_teleski-logo.png",
+        "logo_télécabine":"https://image.flaticon.com/icons/png/512/67/67675.png",
+        "nombre_tapis_ouvert": "1/3",
+        "nombre_teleski_ouvert": "0/7",
+        "nombre_de_telepherique_ouvert": "0/7",
+        "nombre_de_telecabine_ouvert": "0/7",
+        "plan_pistes": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSrD58A5aqNldn5rk7QOtPGLforUqyLuT6-N87MQeRlbsvfmIqE&usqp=CAU",
+        "détail_pistes": [
+            {
+                "nom_piste": "laure",
+                "couleur_piste": "vert",
+                "status_ouverture_piste": "1"
+            },
+            {
+                "nom_piste": "Biscusat",
+                "couleur_piste": "vert",
+                "status_ouverture_piste": "0"
+                
+            },
+            {
+                "nom_piste": "Arelles",
+                "couleur_piste": "rouge",
+                "status_ouverture_piste": "1"
+               
+            },
+            {
+                "nom_piste": "Marmottes",
+                "couleur_piste": "noire",
+                "status_ouverture_piste": "0"
+                
+            }
+        ],
+        "détail_remontées": [
+            {
+                "nom_remontées": "Ts d'Arselle",
+                "Type_remontées": "Télésiége",
+                "status_ouverture_remontées": "1",
+                "heure_ouverture": "10h00"
+            },
+            {
+                "nom_remontées": "TS des Amoureux",
+                "Type_remontées": "Télésiège",
+                "status_ouverture_remontées": "0",
+                "heure_ouverture": "10h00"
+            },
+            {
+                "nom_remontées": "Ts Casserousse",
+                "Type_remontées": "Télésiégé",
+                "status_ouverture_remontées": "0",
+                "heure_ouverture": "9h00"
+            }
+        ]
+    }
+]

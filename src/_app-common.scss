@@ -1,0 +1,1145 @@
+@import "~@nativescript/theme/core";
+@import "~@nativescript/theme/lemon";
+
+// Place any CSS rules you want to apply on both iOS and Android here.
+// This is where the vast majority of your CSS code goes.
+
+// Font icon class
+.fab {
+    font-family: "Font Awesome 5 Brands", "fa-brands-400";
+    font-weight: 700;
+}
+
+.fas {
+    font-family: "Font Awesome 5 Free", "fa-solid-900";
+    font-weight: 900;  
+}
+
+.far {
+    font-family: "Font Awesome 5 Free", "fa-regular-400";
+    font-weight: 400;
+}
+.position{
+    
+    // padding-top:40;
+    //   padding-left: 45;
+      text-align: center;
+      color: white;
+      font-size: 18px;
+}
+.picture{
+    // background-image: url("~/images/jambebis.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 200 200;
+    border-radius: 100%;
+    margin-bottom: 20;
+}
+.pictureA{
+    // background-image: url("~/images/chute.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 200 200;
+    border-radius: 100%;
+    margin-bottom: 20;
+}
+.pictureB{
+    // background-image: url("~/images/collision.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 200 200;
+    border-radius: 100%;
+    margin-bottom: 20;
+}
+.pictureC{
+    // background-image: url("~/images/autre.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 200 200;
+    border-radius: 100%;
+    margin-bottom: 20;
+}
+.pictureD{
+    // background-image: url("~/images/tete.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 200 200;
+    border-radius: 100%;
+    margin-bottom: 20;
+}
+.pictureE{
+    // background-image: url("~/images/bras.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 200 200;
+    border-radius: 100%;
+    margin-bottom: 20;
+}
+.pictureF{
+    // background-image: url("~/images/epaule.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 200 200;
+    border-radius: 100%;
+    margin-bottom: 20;
+}
+.pictureG{
+    // background-image: url("~/images/genou.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 200 200;
+    border-radius: 100%;
+    margin-bottom: 20;
+}
+.pictureA1{
+    // background-image: url("~/images/skieur.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 200 200;
+    border-radius: 100%;
+    margin-bottom: 20;
+}
+.pictureB1{
+    background-image: url("~/images/snowboard.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 200 200;
+    border-radius: 100%;
+    margin-bottom: 20;
+}
+.pictureC1{
+    // background-image: url("~/images/luge.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 200 200;
+    border-radius: 100%;
+    margin-bottom: 20;
+}
+.pictureD1{
+    // background-image: url("~/images/raquette.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 200 200;
+    border-radius: 100%;
+    margin-bottom: 20;
+}
+.far {
+    font-family: "Font Awesome 5 Free", "fa-regular-400";
+    font-weight: 400;
+}
+
+.font-awesome {
+    font-family: "fontawesome-webfont";
+    font-size: 24;
+ }
+ .fond2{
+     background-color: #EB1414;
+ }
+ .radioBefore {
+    font-family: "fontawesome-webfont";
+    font-size: 24;
+ }
+.titrecondition{
+    color: black;
+    font-size: large;
+}
+.condition{
+    font-size: 20; 
+    color: black;
+    font-weight: bold;
+    margin-bottom: 5%;
+}
+.notifheure{
+    color:white;
+    font-weight:Bold; 
+    font-style:italic;
+    font-size: 10px; 
+    margin-top: 10%;
+}
+.imgnotif{
+    border: 5px black solid;
+}
+.encadre{
+    border-width:5px;
+    border-style:solid;
+    border-color:black;
+    text-align: center;
+    margin-bottom: 2%;
+    margin-top: 2%;
+}
+.bouttonsos{
+// background-image: url("https://lh3.googleusercontent.com/proxy/uCtBqMRWzx1HfV_baaQ0lRfaL5gmST2p7NuFvII7mDleQgGox_QTEakySz7tpt9cWhRhduZNQ3116d82nrFR1eJ2K_RcBVs-2mJ4S7r-IQMRAyRsSVg99u7HH-uk"); 
+width: 75%;
+height: 50%;
+background-size: contain;
+background-repeat: no-repeat;
+margin-top: 10%;
+border-radius: 25%;
+}
+.bouttonsos:active{
+transform: scale(0.75);
+}
+.fond{
+    background-color:#3E3F32 ;
+}
+.entete{background-color: white;
+        }
+.bouttonchute{
+    // background-image: url("https://svgsilh.com/svg/2705600-ffeb3b.svg");
+    margin-top: 20%;
+    margin-bottom: 20%;
+    border-radius: 100%;
+    
+}
+.ButtonOne{
+    border-radius: 25%;
+    margin-top: 20%;
+    background-color:#FDE407 ;
+}
+.ButtonTwo{
+    border-radius: 25%;
+    margin-top: 40%;
+    background-color:#FF0000 ; 
+}
+ContentView:hover{
+    background-color:#F8FD07 ;
+}
+.doc{
+    // margin-top:50%;
+    margin-bottom: 0;
+    margin-left: 10%;
+}
+.overlay{
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color:#C4C4C4;
+    z-index: 2;
+    opacity:0.8;
+}
+
+.bouttonchute:active{
+    background-color: #F8FD07;
+}
+.soumission{
+    border-radius: 10%;
+    width: 80%;
+    height: 10%;
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+// .coverImage {
+//     background-image: url('https://thomascapelli.fr/wp-content/uploads/2015/02/2-sapins_chartreuse_neige-1024x576.jpg%27');
+//     background-repeat: no-repeat;
+//     background-position: center;
+//     background-size: cover;
+// }
+// .SEVERE{
+//     width: 200;
+//     height: 200;
+//     background-color: red;
+//     color: black;
+//     font-size: 30;
+//     font-weight: bold;
+//     border-radius: 25;
+//     margin-top: 30;
+
+// }
+// .SERIEUSE{
+//     width: 200;
+//     height: 200;
+//     background-color: orange;
+//     color: black;
+//     font-size: 30;
+//     font-weight: bold;
+//     border-radius: 25;
+//     margin-top: 30;
+
+// }
+// .MODEREE{
+//     width: 200;
+//     height: 200;
+//     background-color: yellow;
+//     color: black;
+//     font-size: 30;
+//     font-weight: bold;
+//     border-radius: 25;
+//     margin-top: 30;
+
+// }
+// .LEGERE{
+//     width: 200;
+//     height: 200;
+//     background-color: green;
+//     color: black;
+//     font-size: 30;
+//     font-weight: bold;
+//     border-radius: 25;
+//     margin-top: 30;
+
+// }
+// Common page class
+.page__content {
+    &-icon,
+    &-placeholder {
+        color: const(grey);
+        font-size: 15;
+        vertical-align: center;
+        horizontal-align: center;
+    }
+
+    &-icon {
+        font-size: 72;
+        vertical-align: top;
+        margin-top: 20%;
+    }
+}
+
+// Drawer navigation custom styles
+.nt-drawer__header-image {
+    color: const(grey);
+}
+.label {
+    color: rgb(0, 0, 0);
+}
+
+// .bottom-nav{
+//     background-color: rgb(0, 0, 0);
+// }
+
+.fas{
+    color: #F8FD07;
+}
+.boutonferme{
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRF1eEyANbRyYqmWMCNxqIDkJpvlVGTGUmZI9t8wjxVsyHXosec&usqp=CAU");
+    background-repeat: no-repeat;
+    width: 25%;
+    height: 25%;
+}
+
+// Common page class
+.page__content {
+    background-color: yellow;
+    &-icon,
+    &-placeholder {
+        color: const(grey);
+        font-size: 20;
+        vertical-align: center;
+        // horizontal-align: center;
+    }
+
+    &-icon {
+        font-size: 72;
+        vertical-align: top;
+        margin-top: 20%;
+    }
+}
+.search__page__content {
+    background-color:#3E3F32;
+}
+.settings__page__content {
+    background-color:#000000;
+}
+// Drawer navigation custom styles
+
+.nt-drawer__header-image {
+    color: white;
+}
+.nt-drawer__header-footnote {
+    color: black;
+    font-weight: bold;
+}
+.nt-icon {
+    color: yellow;  
+    font-size: 45;
+}
+.p-r-10 {
+    color: white;
+    font-size: 18;
+}
+.nt-drawer__body {
+    background-color: black;
+}
+TabStripItem {
+    color: yellow;
+    background-color: black;
+    margin-bottom: 5;
+}
+Button {
+    background-color: yellow;
+    font-weight: bold;
+    font-size: 18;
+    margin-top: 30;
+    border-radius: 15;
+}
+#button_health_book {
+    background-color: white;
+    font-weight: bold;
+    font-size: 18;
+    border-radius: 15;
+    margin-bottom: 40;
+}
+.pageLabel {
+    font-size: 23;
+}
+.greyPage {
+    font-size: 23;
+    color: white;
+}
+.blackPage {
+    font-size: 23;
+    color: black;
+}
+.actionBarUtilisateur{
+    background-color:#FFFFFF;
+}
+.actionBarDanger {
+    background-color:#3E3F32;
+}
+.actionBarSos {
+    background-color:#3E3F32;
+}
+.actionBarCarnet {
+    background-color:#FFFFFF;
+}
+.actionBarSignalement {
+    background-color:#FFFFFF;
+}
+.danger_button {
+    border-radius: 100;
+
+}
+.photo_carnet{
+    border-radius: 200;
+    margin-top: 30;
+    margin-right: 20;
+}
+#vousEtes {
+    margin-left: 130;
+    margin-top: 150;
+}
+#redVictime {
+    margin-right: 170;
+    border-radius: 100;
+}
+#greenTemoin {
+    margin-left: 170;
+    border-radius: 100;
+}
+#victime {
+    margin-left: 50;
+    margin-top: 290;
+}
+#temoin {
+    margin-left: 220;
+    margin-top: 290;
+}
+#myView {
+    width: 35%;
+    height: 100%;
+    background-color: #DCCBCB;
+    margin-top: 15;
+    margin-left: 20;
+    margin-right: 20;
+    margin-bottom: 15;
+}
+#myDanger1 {
+    border-radius: 100%;
+    background-color: #EC4621;
+    margin-top: 15;
+    margin-left: 20;
+    margin-right: 20;
+    margin-bottom: 15;
+    background-image: url("~/app/images/tree trunk.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 150 150;
+}
+#myDanger2 {
+    border-radius: 100%;
+    background-color: #E6D005;
+    margin-top: 15;
+    margin-left: 20;
+    margin-right: 20;
+    margin-bottom: 15;
+    background-image: url("~/app/images/stopping.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 150 150;
+}
+.danger_button {
+    border-radius: 50%;
+    background-color: #DCCBCB;
+    margin-top: 10;
+    margin-bottom: 10;
+    
+}
+.danger_button2 {
+    // border-radius: 100%;
+    // background-color: #DCCBCB;
+    // margin-top: 5;
+    // margin-bottom: 10;
+    background-image: url("~/app/images/stopping.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 275 275;
+    border-radius: 100%;
+    margin-bottom: 10;
+    
+}
+.nomPrenom_carnet {
+    color: yellow;
+    font-size: 22;
+    font-weight: bold;
+    margin-top: 9;
+}
+.age_carnet {
+    color: yellow;
+    font-size: 20;
+    margin-top: 15;
+}
+.infosCarnet{
+    color: yellow;
+    font-size: 18;
+    margin-left: 23;
+    margin-top: 23;
+    margin-right: 20;
+    text-decoration: underline;
+}
+.groupe_sanguin{
+    color: yellow;
+    font-size: 18;
+    margin-left: 23;
+    margin-top: 23;
+    margin-right: 20;
+}
+#groupe{
+    margin-left: 22;
+    margin-top: 39;
+    margin-right: 20;
+    color: white;
+    font-size: 24;
+}
+#champs_choix_station{
+    background-color: #FFFFFF;
+    color : black;
+    border-radius: 25;
+    position: relative;
+    top: 50;
+}
+.entete{
+    color: white;
+    font-size: 23;
+    margin-top: 362;
+    margin-left: 67;
+}
+.mes_signalements{
+    color: black;
+    font-size: 18;
+}
+.date_heure{
+   margin-left: 85; 
+   text-align: right;
+}
+.numero_fiche{
+    text-align: left;
+}
+.declaration{
+    color: black;
+    font-size: 14rem;
+    font-weight: bold;
+    margin-top: 30;
+}
+.categorie{
+    color: black;
+    font-size: 14rem;
+    font-weight: bold;
+    margin-top: 50;
+}
+.statut{
+    color: black;
+    font-size: 14rem;
+    font-weight: bold;
+    margin-top: 70;
+}
+#ouverture{
+    background-color: grey;
+    color :white;
+    border-radius: 25;
+    position: relative;
+    top: 50;
+}
+.SEVERE{
+    width: 200;
+    height: 200;
+    background-color: red;
+    color: black;
+    font-size: 30;
+    font-weight: bold;
+    border-radius: 25;
+    margin-top: 30;
+
+}
+.SERIEUSE{
+    width: 200;
+    height: 200;
+    background-color: orange;
+    color: black;
+    font-size: 30;
+    font-weight: bold;
+    border-radius: 25;
+    margin-top: 30;
+
+}
+.MODEREE{
+    width: 200;
+    height: 200;
+    background-color: yellow;
+    color: black;
+    font-size: 30;
+    font-weight: bold;
+    border-radius: 25;
+    margin-top: 30;
+
+}
+.LEGERE{
+    width: 200;
+    height: 200;
+    background-color: green;
+    color: black;
+    font-size: 30;
+    font-weight: bold;
+    border-radius: 25;
+    margin-top: 30;
+
+}
+.cadre_choix{
+    border: 5 solid black;
+
+}
+.coverImage {
+    background-image: url('https://thomascapelli.fr/wp-content/uploads/2015/02/2-sapins_chartreuse_neige-1024x576.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#message_accueil{
+    border-radius: 25;
+}
+.btn_creer_un_compte{
+    background-color: white;
+    color: black;
+    border-radius: 25%;
+    margin-top: 340vh;
+    width: 87%;
+}
+.btn_creer_un_compte2{
+    background-color: white;
+    color: black;
+    border-radius: 25;
+    margin-left: 30;
+    margin-right: 30; 
+    margin-top: -130;
+}
+// .introduction{
+//     color: white;
+//     font-size: 18;
+//     margin-top: 70;
+//     margin-left: 31;
+// }
+.page{
+    background-image: url("~/app/images/pageCreationCompte.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+}
+.entete2{
+    color: white;
+    font-size: 20rem;
+    margin-top: 270vh;
+    text-align: center;
+}
+.entete3{
+    color: white;
+    font-size: 18rem;
+    margin-top: 300vh;
+    font-weight: bold;
+    text-align: center;
+}
+.entete4{
+    color: white;
+    font-size: 18rem;
+    margin-top: 460vh;
+    margin-right: 50vw;
+    font-weight: bold;
+    text-align: right;
+    font-style: italic;
+    text-decoration: underline;
+}
+.entete5{
+    color: white;
+    font-size: 18;
+    margin-top: 290;
+    font-weight: bold;
+    text-align: center;
+}
+#photo{
+    border: 3 solid #C4C4C4;
+
+}
+#slider{
+    color: black;
+    font-size: 20;
+    font-weight: bold;  
+}
+// .slider{
+//     background-color: black;
+//     color: white;
+//     font-size: 20;
+//     padding: 10 10 10 10;
+// }
+#camera{
+    color: white;
+    font-size: 130;
+    font-weight: bold;
+    text-align: center;
+    
+}
+#camera2{
+    color: white;
+    font-size: 25;
+    font-weight: bold;
+    // margin-left: 50;
+    text-align: center;
+    
+}
+#cameraProfil{
+    color: blue;
+    font-size: 70;
+    text-align: center;
+    margin-top: -100vh;
+    
+}
+#cameraProfil2{
+    color:white;
+    font-size: 70;
+    font-weight: bold;
+    // margin-left: 50;
+    text-align: center;
+    vertical-align: auto;
+    
+}
+.numberPictures{
+    color: yellow;
+    font-size: 30;
+    font-weight:"bold";
+    margin-top: 10;
+}
+.valider_carnet{
+    padding-left: 20;
+    padding-right: 20;
+    margin-bottom: 15;
+}
+.supprimer_carnet{
+    background-color: red;
+    color: white;
+    margin-bottom: 15;
+}
+#goutte_de_sang{
+    color: red;
+    font-size: 84;
+}
+#Avalanche{
+    background-image: url("https://image.flaticon.com/icons/svg/100/100244.svg");
+}
+.bandeau_photo{
+    margin-bottom: 25;
+}
+.photo_danger{
+    margin-bottom: 25;
+}
+#bin{
+    font-size: 40;
+    margin-top: 13;
+    margin-left: 282;
+    z-index: 2;
+}
+#circle{
+    border-radius: 100%;
+    background-color: black;
+    margin-left: 240;
+    margin-bottom: 385;
+}
+#circle_sending{
+    border-radius: 50%;
+    background-color: black;
+}
+#fleche_envoi{
+     color: yellow;
+     font-size: 100; 
+     text-align: center;  
+     margin-top: -230;
+}
+#envoyer{
+    color: yellow;
+     font-size: 30;
+     text-align: center;
+    margin-top: -110;
+    // margin-bottom: 50;
+}
+.message_confirmation{
+    font-size: 21;
+    color: black;
+    text-align: justify;
+    border: 2 solid grey;
+}
+.galerie{
+    margin-top: 20;
+    margin-bottom: 20;
+}
+.galerie_end{
+    margin-top: 20;
+    margin-bottom: 90;
+}
+#Etat_piste{
+    padding-top: 110%;
+    padding-left: 42vw;
+    font-size: 13;
+    font-weight: bold;
+}
+#Meteorologie{
+    padding-top: 110%;
+    padding-left: 50vw;
+    font-size: 13;
+    font-weight: bold;
+}
+#A{
+    padding-top: 110%;
+    padding-left: 42vw;
+    font-size: 13;
+    font-weight: bold;
+}
+#Crevasse{
+    padding-top: 110%;
+    padding-left: 42vw;
+    font-size: 13;
+    font-weight: bold;
+}
+#Obstacle{
+    padding-top: 110%;
+    padding-left: 44vw;
+    font-size: 13;
+    font-weight: bold;
+}
+#Signaletique{
+    padding-top: 110%;
+    padding-left: 32vw;
+    font-size: 13;
+    font-weight: bold;
+}
+#Animaux{
+    padding-top: 110%;
+    padding-left: 45vw;
+    font-size: 13;
+    font-weight: bold;
+}
+#Autres{
+    padding-top: 110%;
+    padding-left: 50vw;
+    font-size: 13;
+    font-weight: bold;
+}
+#domaine{
+    border-radius: 100%;
+    padding-top: 35;
+    padding-left: 10;
+}
+#status_open{
+    background-color: green;
+    color: white;
+}
+#status_closed{
+    background-color: red;
+    color: white;
+}
+.espacement{
+    margin-bottom: 160px;
+}
+.logo_station{
+    margin-top: 265vh;
+}
+.iconEtatDeLaPiste{
+    background-image: url("~/app/images/Etat des pistes.png");
+    background-repeat:no-repeat;
+    background-position: center;
+    background-size: 200 200;
+    border-radius: 100%;
+    margin-bottom: 20;
+}
+.iconMeteo{
+    background-image: url("~/app/images/storm.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 200 200;
+    border-radius: 100%;  
+    margin-bottom: 20;
+}
+.iconA{
+    background-image: url("~/app/images/avalanche.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 200 200;
+    border-radius: 100%;  
+    margin-bottom: 20;
+}
+.iconAutres{
+    background-image: url("~/app/images/interrogation.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 200 200;
+    border-radius: 100%; 
+    margin-bottom: 20; 
+}
+.iconCrevasse{
+    background-image: url("~/app/images/crevasse.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 200 200;
+    border-radius: 100%;  
+    margin-bottom: 20;
+}
+.iconObstacle{
+    background-image: url("~/app/images/tree trunk.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 200 200;
+    border-radius: 100%;  
+    margin-bottom: 20;
+}
+.iconSignaletique{
+    background-image: url("~/app/images/stopping.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 200 200;
+    border-radius: 100%;
+    margin-bottom: 20;
+}
+.iconAnimaux{
+    background-image: url("~/app/images/animal-prints.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 200 200;
+    border-radius: 100%;  
+    margin-bottom: 20;
+}
+// .menuRapide{
+// //   background: #FFFFFF;
+// // //   position: relative;
+// // //   bottom: 0;
+// // //   width: 100%;
+// //   height: 11%;
+
+// // }
+// // .ecran{
+// //     height: 100%;
+// // }  
+#basDePage{
+    // background: #000000;
+    // position: absolute;
+    // bottom: 0;
+    // width: 100%;
+    // height: 11%;
+    text-align: center;
+    // margin-top: 81%;
+    
+}
+.un{
+    text-align: center;
+    font-weight: bold;
+    font-size: 25;
+    margin-top: 5;
+    margin-bottom: 5;
+}
+.motDePasse{
+    text-align: center;
+    font-size: 20;
+    font-weight: bold;
+}
+
+#iconTapis{
+    background-image: url("~/app/images/tapis.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 200 200;
+    width: 60vw;
+    height: 60vh;
+}
+#iconTeleski{
+    background-image: url("~/app/images/schlepplift.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 200 200;
+    width: 60vw;
+    height: 80vh;
+}
+#iconTelesiege{
+    background-image: url("~/app/images/remontée_mécanique.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 200 200;
+    width: 70vw;
+    height: 70vh;
+}
+#iconTelecabine{
+    background-image: url("~/app/images/cable-car.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 200 200;
+    width: 70vw;
+    height: 70vh;
+}
+
+/*CSS Mathieu ajouté le 29/04---------------------*/
+.temps{
+    font-family: 'icon-temps', 'icon-temps-regular';
+    font-size: 70;  
+}
+.iconemont{
+    font-family: 'icon-mont', 'icon-mont-regular';
+    font-size: 100;
+    transform: rotate(180);  
+}
+.neige{
+    font-family: 'icon-neige', 'icon-neige-regular';
+    font-size: 30; 
+}
+
+.picto{
+    font-family: 'icon-jambe', 'icon-jambe-regular';
+    font-size: 60;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 200 200;
+    border-radius: 100%;
+    margin-bottom: 20;
+    text-align: center;
+    margin-top:0;
+}
+
+.main{
+    font-family: 'icon-main', 'icon-main-regular';
+    font-size: 133;
+    transform: rotate(180);  
+}
+.pictureelement{
+    font-family: 'Icon', 'icon-regular';
+    font-size: 60;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 200 200;
+    border-radius: 100%;
+    margin-bottom: 20;
+    text-align: center;
+}
+.iconetete{
+    font-family: 'icon-t', 'icon-t-regular';
+    font-size: 60;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 200 200;
+    border-radius: 100%;
+    margin-bottom: 20;
+    text-align: center;
+}
+.iconebras{
+    font-family: 'icon-bras', 'icon-bras-regular';
+    font-size: 60;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 200 200;
+    border-radius: 100%;
+    margin-bottom: 20;
+    text-align: center;
+}
+.iconetotal{
+    font-family: 'icon-tot', 'icon-tot-regular';
+    font-size: 60;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 200 200;
+    border-radius: 100%;
+    margin-bottom: 20;
+    text-align: center;
+}
+.iconeluge{
+    font-family: 'icon-luge', 'icon-luge-regular';
+    font-size: 70;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 200 200;
+    border-radius: 100%;
+    margin-bottom: 20;
+    text-align: center;
+    padding-top: 0;
+}
+.iconecol{
+    font-family: 'icon-col', 'icon-col-regular';
+    font-size: 60;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 200 200;
+    border-radius: 100%;
+    margin-bottom: 20;
+    text-align: center;
+}
+
+
+/* CSS implémentation du formulaire de connexion et d'inscription------------------------------*/
+
+.page {
+    align-items: center;
+    flex-direction: column;
+  }
+.form {
+    margin-left: 30;
+    margin-right: 30;
+    flex-grow: 2;
+    // vertical-align: middle;
+    margin-top: 5%;
+  }
+
+
+
+
+/* CSS implémentation du formulaire carnet de sante ------------------------------*/
+
+//   .formSanteCss {
+//     margin-bottom: 3%;
+//   }
+
+.page{
+    background-image: url("~/app/images/pageCreationCompte.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+}
+.pageChoixStation{
+    background-image: url("~/app/images/pageChoixStation.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+}
+.pageAccueil{
+    background-image: url("~/app/images/pageAccueilJaune.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+}
+.titreCGU{
+    text-align: center;
+}

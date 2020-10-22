@@ -1,0 +1,8 @@
+<ScrollView>
+<StackLayout class="form">
+    <TextField class="formSanteCss" hint="Nom personne contact" [(ngModel)]="carnetServ.dossierSante.nom_contact" color="black" background="lightgrey" width="90%" height="50rem" borderRadius="10%" paddingLeft="8%" fontSize="20rem"></TextField>
+    <TextField class="formSanteCss" hint="Prénom personne contact" [(ngModel)]="carnetServ.dossierSante.prenom_contact" color="black" background="lightgrey" width="90%" height="50rem" borderRadius="10%" paddingLeft="8%" fontSize="20rem"></TextField>
+    <TextField class="formSanteCss" hint="Téléphone personne contact" [(ngModel)]="carnetServ.dossierSante.tel_contact" color="black" background="lightgrey" width="90%" height="50rem" borderRadius="10%" paddingLeft="8%" fontSize="20rem"></TextField>
+    <Button [nsRouterLink]="['/carnet']" text="SAUVEGARDER" class="valider_carnet" backgroundColor="green"; color="white"></Button> 
+</StackLayout>
+</ScrollView>

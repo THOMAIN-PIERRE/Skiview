@@ -1,0 +1,32 @@
+<!-- <ActionBar>
+    <Label class="blackPage" text="SIGNALEMENT ENVOYE !"></Label>
+</ActionBar> -->
+<ScrollView>
+<GridLayout columns="*" rows="*, *, *, *" marginBottom="30%">
+
+    <Label col="0" row="0" text="SIGNALEMENT ENVOYE !" class="un"></Label>
+
+    <Label [nsRouterLink]="['/danger/historiqueSignalement']" col="0" row="1" class="danger_button2" text="" width="150rem" height="150rem" backgroundColor="#FF7F00"></Label> 
+
+    <Label col="0" row="2" text="MERCI pour votre contribution active au programme de signalement partricipatif mis en place par la station." textWrap="true" class="message_confirmation"></Label>
+    <Label col="0" row="3" text="Vous pouvez suivre l’évolution de votre signalement dans la rubrique “Mes signalements”" textWrap="true" class="message_confirmation"></Label>
+<!-- <GridLayout rows="*" columns="*,*">
+    <Label [nsRouterLink]="['/utilisateur/station']" col="0" row="0" text="&#xf015;" class="nt-icon fas" id="basDePage" height="100%"></Label>
+    <Label [nsRouterLink]="['/danger/historiqueSignalement']" col="1" row="0" text="&#xf573;" class="nt-icon fas" id="basDePage" height="100%"></Label>
+</GridLayout>-->
+</GridLayout>
+</ScrollView>
+
+<GridLayout verticalAlignment="bottom">
+    <GridLayout columns="*, *" height="70"  backgroundColor="#000000">
+        <GridLayout col="0" backgroundColor="#000000" horizontalAlignment="center" verticalAlignment="center">
+            <Label  [nsRouterLink]="['/utilisateur/station']" col="0" text="&#xf015;" class="nt-icon fas"></Label>
+        </GridLayout>
+        <GridLayout col="1" backgroundColor="#000000">
+            <Label [nsRouterLink]="['/danger/historiqueSignalement']" col="0" text="&#xf573;" class="nt-icon fas" horizontalAlignment="center" verticalAlignment="center"></Label>
+        </GridLayout>  
+    </GridLayout>
+</GridLayout>
+
+
+

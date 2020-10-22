@@ -1,0 +1,47 @@
+<!-- <ScrollView>
+<FlexboxLayout class="search__page__content" flexDirection="row" flexWrap="wrap" justifyContent="space-around"> -->
+    <!-- <Label class="danger_button" id="Etat_piste" (tap)="categorieDanger('categorie')" [nsRouterLink]="['/danger/photo']" pageTransition="flip" text="Etat de la piste" width="400px" height="400px" backgroundColor="#FFFFFF"></Label>
+    <Label class="danger_button" id="Meteorologie" [nsRouterLink]="['/danger/photo']" text="Météo" width="400px" height="400px" backgroundColor="#F8FD07"></Label>
+    <Label class="danger_button" id="Avalanche" [nsRouterLink]="['/danger/photo']" text="Avalanche" width="400px" height="400px" backgroundColor="#C4C4C4"></Label>
+    <Label class="danger_button" id="Crevasse" [nsRouterLink]="['/danger/photo']" text="Crevasse" width="400px" height="400px" backgroundColor="#FF5E69"></Label>
+    <Label class="danger_button" id="Obstacle" [nsRouterLink]="['/danger/photo']" text="Obstacle" width="400px" height="400px" backgroundColor="#EC4621"></Label>
+    <Label class="danger_button" id="Signaletique" [nsRouterLink]="['/danger/photo']" text="Signalétique" width="400px" height="400px" backgroundColor="#E6D005"></Label>
+    <Label class="danger_button" id="Animaux" [nsRouterLink]="['/danger/photo']" text="Animaux" width="400px" height="400px" backgroundColor="#05E65A"></Label>
+    <Label class="danger_button" id="Autres" [nsRouterLink]="['/danger/photo']" text="Autres" width="400px" height="400px" backgroundColor="#1184FF"></Label> -->
+
+    <!-- <Image src="~/app/images/Etat des pistes.png" (tap)="categorieDanger('categorie')" [nsRouterLink]="['/danger/photo']" pageTransition="flip" text="Etat des pistes" width="400px" height="400px" backgroundColor="#FFFFFF"></Image>
+    <Image src="~/app/images/Stormy weather.png" (tap)="categorieDanger('categorie')" [nsRouterLink]="['/danger/photo']" pageTransition="flip" text="Météo" width="400px" height="400px" backgroundColor="#FFFFFF"></Image>
+    <Image src="~/app/images/tree trunk.png" (tap)="categorieDanger('categorie')" [nsRouterLink]="['/danger/photo']" pageTransition="flip" text="Obstacle" width="400px" height="400px" backgroundColor="#FFFFFF"></Image>
+    <Image src="~/app/images/stopping.png" (tap)="categorieDanger('categorie')" [nsRouterLink]="['/danger/photo']" pageTransition="flip" text="Signalétique" width="400px" height="400px" backgroundColor="#FFFFFF"></Image>
+    <Image src="~/app/images/avalanche.png" (tap)="categorieDanger('categorie')" [nsRouterLink]="['/danger/photo']" pageTransition="flip" text="Avalanche" width="400px" height="400px" backgroundColor="#FFFFFF"></Image>
+    <Image src="~/app/images/crevasse.png" (tap)="categorieDanger('categorie')" [nsRouterLink]="['/danger/photo']" pageTransition="flip" text="Crevasse" width="400px" height="400px" backgroundColor="#FFFFFF"></Image>
+    <Image src="~/app/images/animal-prints.png" (tap)="categorieDanger('categorie')" [nsRouterLink]="['/danger/photo']" pageTransition="flip" text="Animaux" width="400px" height="400px" backgroundColor="#FFFFFF"></Image>
+    <Image src="~/app/images/icon (5).png" (tap)="categorieDanger('categorie')" [nsRouterLink]="['/danger/photo']" pageTransition="flip" text="Autres" width="400px" height="400px" backgroundColor="#FFFFFF"></Image> -->
+<!-- </FlexboxLayout> -->
+<!-- </ScrollView> -->
+
+    <ScrollView>
+        <FlexboxLayout class="search__page__content" flexDirection="row" flexWrap="wrap" justifyContent="space-around">
+            <Label class="danger_button" class="iconEtatDeLaPiste" id="Etat_piste" text="Etat piste" width="140rem" height="140rem" backgroundColor="#000000" (tap)="categorieDangerEtatPistes('etatPistes')" [nsRouterLink]="['/danger/photo']"></Label>
+            <Label class="danger_button" class="iconMeteo" id="Meteorologie" text="Météo" width="140rem" height="140rem" backgroundColor="#F8FD07" (tap)="categorieDangerMeteo('meteo')" [nsRouterLink]="['/danger/photo']"></Label>
+            <Label class="danger_button" class="iconA" id="A" text="Avalanche" width="140rem" height="140rem" backgroundColor="#C4C4C4" (tap)="categorieDangerAvalanche('avalanche')" [nsRouterLink]="['/danger/photo']"></Label>
+            <Label class="danger_button" class="iconCrevasse" id="Crevasse" text="Crevasse" width="140rem" height="140rem" backgroundColor="#FF5E69" (tap)="categorieDangerSignaletique('signaletique')" [nsRouterLink]="['/danger/photo']"></Label>
+            <Label class="danger_button" class="iconObstacle" id="Obstacle" text="Obstacle" width="140rem" height="140rem" backgroundColor="#EC4621" (tap)="categorieDangerObstacle('obstacle')" [nsRouterLink]="['/danger/photo']"></Label>
+            <Label class="danger_button" class="iconSignaletique" id="Signaletique" text="Signalétique" width="140rem" height="140rem" backgroundColor="#E6D005" (tap)="categorieDangerCrevasse('crevasse')" [nsRouterLink]="['/danger/photo']"></Label>
+            <Label class="danger_button" class="iconAnimaux" id="Animaux" text="Animaux" width="140rem" height="140rem" backgroundColor="#05E65A" (tap)="categorieDangerAnimaux('animaux')" [nsRouterLink]="['/danger/photo']"></Label>
+            <Label class="danger_button" class="iconAutres" id="Autres" text="Autres" width="140rem" height="140rem" backgroundColor="#1184FF" (tap)="categorieDangerAutres('autres')" [nsRouterLink]="['/danger/photo']"></Label>
+        </FlexboxLayout>
+    </ScrollView>
+
+
+   
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,120 @@
+<!-- <GridLayout rows="100, 400">
+    <ContentView row="0" width="100%" backgroundColor="#000000" class="bandeau_photo"></ContentView>
+    <ContentView row="1" width="80%" backgroundColor="#C4C4C4" class="photo_danger"></ContentView>
+</GridLayout>
+<FlexboxLayout flexDirection="column" justifyContent="center">
+    <Label text="&#xf030;" class="nt-icon fas" id="camera"></Label>
+    <Label text="PRENDRE UNE PHOTO" id="camera2"></Label>
+</FlexboxLayout> 
+<FlexboxLayout flexDirection="row" justifyContent="space-around" align-items="center" class="numberPictures">
+    <Label text="&#xf030;" (tap)="takePicture()" class="nt-icon fas"></Label>
+    <Label text="0/3"></Label>
+</FlexboxLayout>      -->
+<!-- <FlexboxLayout flexDirection="row" justifyContent="space-around">
+    <BottomNavigation>
+        <TabStrip>
+            <TabStripItem>
+                <Label [nsRouterLink]="['']" text="&#xf053;" class="nt-icon fas" id="slider"></Label>
+            </TabStripItem>
+            <TabStripItem>
+                <Label [nsRouterLink]="['']" text="PRECEDENT" id="slider"></Label>
+            </TabStripItem>
+            <TabStripItem>
+                <Label [nsRouterLink]="['']" text="SUIVANT" id="slider"></Label>
+            </TabStripItem>
+            <TabStripItem>
+                <Label [nsRouterLink]="['']" text="&#xf054;" class="nt-icon fas" id="slider"></Label>
+            </TabStripItem>
+        </TabStrip>
+    </BottomNavigation>
+</FlexboxLayout> -->
+
+<!-- <FlexboxLayout flexDirection="row" justifyContent="space-around" alignItems="flex-end" class="slider">
+                  
+    <Label [nsRouterLink]="['/danger']" text="< PRECEDENT" id="slider" color="#000000"  marginBottom="20"></Label>
+
+    <Label [nsRouterLink]="['/danger/photo2']" text="SUIVANT >" id="slider" color="#000000"  marginBottom="20"></Label>       
+
+</FlexboxLayout>  -->
+
+<!-- 
+<GridLayout rows="auto, *, auto">
+	<StackLayout orientation="horizontal" row="0" padding="10">
+		<Label text="saveToGallery"></Label>
+		<Switch [(ngModel)]="saveToGallery"></Switch>
+	</StackLayout>
+	<Image row="1" [src]="cameraImage" stretch="fill" margin="10"></Image>
+	<Button text="PRENDRE UNE PHOTO" (tap)="onTakePictureTap($event)" row="2" padding="10"></Button>
+</GridLayout> -->
+
+
+
+
+
+
+<!-- <GridLayout rows="100, 400">
+    <ContentView row="0" width="100%" backgroundColor="#000000" class="bandeau_photo"></ContentView>
+    <ContentView row="1" width="80%" backgroundColor="#C4C4C4" class="photo_danger"></ContentView>
+    <Label text="Sauver dans la galerie" color="#FFFF00"></Label>
+    <Switch [(ngModel)]="saveToGallery" color="#FFFFFF"></Switch>
+</GridLayout>
+
+<FlexboxLayout flexDirection="column" justifyContent="center">
+    <Label text="&#xf030;" class="nt-icon fas" id="camera"></Label>
+    <Label text="PRENDRE UNE PHOTO" id="camera2"></Label>
+    <Image row="1" [src]="cameraImage" stretch="fill" margin="10"></Image>
+    <!-- <Switch [(ngModel)]="saveToGallery"></Switch> -->
+<!-- </FlexboxLayout>  -->
+<!-- <FlexboxLayout flexDirection="row" justifyContent="space-around" align-items="center" class="numberPictures">
+    <Label text="&#xf030;" (tap)="onTakePictureTap($event)" class="nt-icon fas"></Label> -->
+    <!-- <Switch [(ngModel)]="saveToGallery"></Switch> -->
+    <!-- <Label text="0/1"></Label>
+</FlexboxLayout>
+<FlexboxLayout flexDirection="row" justifyContent="space-around" alignItems="flex-end" class="slider">
+                  
+    <Label [nsRouterLink]="['/danger']" text="< PRECEDENT" id="slider" color="#000000"  marginBottom="20"></Label>
+
+    <Label [nsRouterLink]="['/danger/photo2']" text="SUIVANT >" id="slider" color="#000000"  marginBottom="20"></Label>       
+
+</FlexboxLayout> -->
+<ScrollView>
+    <StackLayout>
+<GridLayout verticalAlignment="top">
+    <GridLayout columns="*, *, *" height="50"  backgroundColor="#000000">
+        <GridLayout  col="0" #tabHighlight>
+        </GridLayout>
+        <GridLayout col="0" backgroundColor="#000000">
+            <Label text="sauver dans galerie" color="#FFFF00" ></Label>
+            <Switch [(ngModel)]="saveToGallery" color="#FFFFFF"></Switch>
+        </GridLayout>
+        <GridLayout col="1" backgroundColor="#000000">
+            <Label text="&#xf030;" (tap)="onTakePictureTap($event)" class="nt-icon fas"></Label>
+        </GridLayout>
+        <GridLayout col="2" backgroundColor="#000000">
+            <Label text="0/1" color="#FFFF00" fontSize="30rem"></Label>
+        </GridLayout>
+    </GridLayout>
+</GridLayout>
+<GridLayout>
+    <!-- <Label text="Effacer l'image" color="#000000" ></Label>   -->
+    <Image row="1" [src]="cameraImage" stretch="fill" width="300rem" height="350rem" margin="20rem"></Image>  
+</GridLayout> 
+</StackLayout>
+</ScrollView>  
+<GridLayout verticalAlignment="bottom">
+    <GridLayout columns="*, *" height="50">
+        <GridLayout  col="0" #tabHighlight>
+        </GridLayout>
+        <GridLayout col="0">
+            <Label [nsRouterLink]="['/danger']" text="< PRECEDENT" id="slider" color="#000000"  marginBottom="20" horizontalAlignment="center"></Label>
+        </GridLayout>
+        <GridLayout col="1">
+            <Label [nsRouterLink]="['/danger/photo2']" text="SUIVANT >" id="slider" color="#000000"  marginBottom="20" horizontalAlignment="center"></Label>       
+        </GridLayout>
+    </GridLayout>
+</GridLayout>
+
+
+
+
+

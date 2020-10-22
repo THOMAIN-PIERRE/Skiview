@@ -1,0 +1,30 @@
+<GridLayout>
+        <ScrollView>
+            <StackLayout>
+                <StackLayout class="hr"></StackLayout>
+                <GridLayout [nsRouterLink]="['/danger/ficheSignalement']" columns="auto, *" class="mes_signalements">
+                    <Label col="0" text="FICHE N° 00001" class="numero_fiche"></Label>
+                    <Label col="1" text="20/04/2019 11:35" class="date_heure"></Label>
+                </GridLayout>
+                <GridLayout [nsRouterLink]="['/danger/ficheSignalement']" columns="auto, *">
+                    <ContentView col="0" id="myDanger1" width="110rem" height="110rem"></ContentView>
+                    <Label col="1" text="SIGNALER DANGER" class="declaration"></Label>
+                    <Label col="1" text="Element sur la piste" class="categorie"></Label>
+                    <Label col="1" text="STATUT : PRIS EN COMPTE" class="statut"></Label>
+                </GridLayout>
+                <StackLayout class="hr"></StackLayout>
+                <GridLayout columns="auto, *" class="mes_signalements">
+                    <Label col="0" text="FICHE N° 00002" class="numero_fiche"></Label>
+                    <Label col="1" text="24/09/2019 15:45" class="date_heure"></Label> 
+                </GridLayout>
+                <GridLayout [nsRouterLink]="['/danger/ficheSignalement']" columns="auto, *">
+                    <ContentView col="0" id="myDanger2" width="110rem" height="110rem" ></ContentView>
+                    <Label col="1" text="SIGNALER DANGER" class="declaration"></Label>
+                    <Label col="1" text="Signalétique" class="categorie"></Label>
+                    <Label col="1" text="STATUT : PRIS EN COMPTE" class="statut"></Label>
+                </GridLayout>
+                <StackLayout class="hr"></StackLayout>
+             
+            </StackLayout>
+        </ScrollView>
+</GridLayout>

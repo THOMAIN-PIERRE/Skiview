@@ -1,0 +1,14 @@
+[
+    {
+        "type_message":"message reconfort SOS",
+        "text_pop-up":"Les secours sont prevenus, Restez calme,Respirez profondément,Respirez calmement"
+    },
+    {
+        "type_message":"message reconfort SOS",
+        "text_pop-up":"Nous avons bien reçu ces compléments d’information,Nous seront bientôt à vos côtés,Restez disponible pour les secouristes (téléphone)"
+    },
+    {
+        "type_message":"message reconfort SOS",
+        "text_pop-up":"Nous avons bien reçu ces compléments d’information,Nous seront bientôt à vos côtés,Restez disponible pour les secouristes (téléphone)" 
+    } 
+]

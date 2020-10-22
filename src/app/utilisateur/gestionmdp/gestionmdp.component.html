@@ -1,0 +1,77 @@
+<!-- <StackLayout class="form">
+    <StackLayout class="input-field">
+    <Label text="GESTION MOT DE PASSE" class="motDePasse"></Label>
+    <TextField class="input" hint="Mot de passe actuel"></TextField>
+    <TextField class="input" hint="Nouveau mot de passe"></TextField>
+    <TextField class="input" hint="Confirmation mot de passe"></TextField>
+    <FlexboxLayout flexDirection="row" flexWrap="wrap" justifyContent="flex-start">  
+    <Button [nsRouterLink]="['/utilisateur/gestioncompte']" text="VALIDER" class="valider_mdp"></Button> 
+    </FlexboxLayout>
+</StackLayout> -->
+
+<!-- <StackLayout class="form" marginTop="2%" rows="20, 20, 20, 20">
+    <StackLayout class="input-field">
+    <Label text="GESTION MOT DE PASSE" class="motDePasse"></Label>
+    <TextField class="" hint="E-mail associé au compte" marginTop="5%"></TextField>
+    </StackLayout>
+
+    <StackLayout marginTop="5%">
+      <TextField class="input" hint="Nouveau mot de passe" ></TextField>
+    </StackLayout>
+
+    <StackLayout marginTop="5%">
+      <TextField class="input"hint="Confirmation mot de passe" ></TextField>
+    </StackLayout>
+
+    <FlexboxLayout flexDirection="row" flexWrap="wrap" justifyContent="center">  
+        <Button [nsRouterLink]="['/utilisateur/gestioncompte']" text="VALIDER" class="valider_mdp"></Button> 
+    </FlexboxLayout>
+
+</StackLayout> -->
+
+<ActionBar>
+    <!-- 
+    Use the NavigationButton as a side-drawer button in Android
+    because ActionItems are shown on the right side of the ActionBar
+    -->
+    <NavigationButton ios:visibility="collapsed" icon="res://menu" (tap)="onDrawerButtonTap()"></NavigationButton>
+    <!-- 
+    Use the ActionItem for IOS with position set to left. Using the
+    NavigationButton as a side-drawer button in iOS is not possible,
+    because its function is to always navigate back in the application.
+    -->
+    <ActionItem icon="res://menu" android:visibility="collapsed" (tap)="onDrawerButtonTap()" ios.position="left">
+    </ActionItem>
+    <Label class="pageLabel" text="GESTION DU COMPTE"></Label>
+</ActionBar>
+<ScrollView>
+<StackLayout class="form">
+    <Label text="GESTION MOT DE PASSE" class="motDePasse"></Label>   
+    <TextField class="formSanteCss" hint="E-mail associé au compte" color="black" background="lightgrey" width="90%" height="50rem" borderRadius="10%" paddingLeft="8%" fontSize="20rem"></TextField>
+    <TextField class="formSanteCss" hint="Nouveau mot de passe" color="black" background="lightgrey" width="90%" height="50rem" borderRadius="10%" paddingLeft="8%" fontSize="20rem"></TextField>
+    <TextField class="formSanteCss" hint="Confirmation mot de passe" color="black" background="lightgrey" width="90%" height="50rem" borderRadius="10%" paddingLeft="8%" fontSize="20rem"></TextField>
+    <Button [nsRouterLink]="['/utilisateur/gestioncompte']" text="MODIFIER" width="90%" height="50rem" backgroundColor="yellow"; color="black"></Button> 
+</StackLayout>
+</ScrollView>
+
+
+
+
+
+
+
+
+
+<!-- <BottomNavigation height="100%">
+    <TabStrip>
+        <TabStripItem>
+            <Label col="0" text="&#xf05a;" class="nt-icon fas"></Label>
+        </TabStripItem>
+        <TabStripItem>
+            <Label col="1" text="&#xf041;" class="nt-icon fas"></Label>
+        </TabStripItem>
+        <TabStripItem>
+            <Label col="2" text="&#xf3c5;" class="nt-icon fas"></Label>
+        </TabStripItem>
+    </TabStrip>
+</BottomNavigation> -->

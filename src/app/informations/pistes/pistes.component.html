@@ -1,0 +1,49 @@
+<StackLayout>
+    <GridLayout backgroundColor="white" columns="*,150" rows="40,1,50,50,50,50,50,*" >
+        <Label color="black" class="page__content-placeholder" text="Ouverture des pistes" row="0" column="0" colspan="4"
+        fontWeight="Bold" textAlign="center"></Label>
+        <StackLayout class="hr" row="1" colspan="2"></StackLayout>
+        <Image row="2" column="0" rowspan="4" src="~/app/images/domaine skiable 2.png"></Image>
+        <!-- <Label backgroundColor="#247DE4"color="white" class="page__content-placeholder" text="70%" textWrap="true" textAlign="center" row="2" column="0" rowspan="4"
+        fontSize="80px"fontWeight="Bold" width="47%" height="30%" id="domaine"></Label> -->
+        <Label backgroundColor="#087A06"color="white" class="page__content-placeholder" text="3/6" row="2" column="1" 
+        fontWeight="Bold" paddingLeft="40%" paddingRight="40%" marginRight="4%"></Label>
+        <Label backgroundColor="#5A57E0"color="white" class="page__content-placeholder" text="5/8" row="3" column="1" 
+        fontWeight="Bold" paddingLeft="40%" paddingRight="40%" marginRight="4%"></Label>
+        <Label backgroundColor="#F10D0D"color="white" class="page__content-placeholder" text="3/5" row="4" column="1" 
+        fontWeight="Bold" paddingLeft="40%" paddingRight="40%" marginRight="4%"></Label>
+        <Label backgroundColor="black" color="white" class="page__content-placeholder" text="5/5" row="5" column="1" 
+        fontWeight="Bold" paddingLeft="40%" paddingRight="40%" marginRight="4%"></Label>
+        <!-- <label [text]="dataServ.station[0]" row="7" colspan="2"></label> -->
+        <WebView row="7" colspan="2"
+    src="https://www.leskidunordausud.fr/photos/HIVER/la-pierre-saint-martin/station/pistes_la-pierre-saint-martin1.jpg">
+    </WebView>
+    </GridLayout>
+</StackLayout>
+
+
+<!-- <GridLayout backgroundColor="black" rows="200" height="10%" marginTop="92%" marginBottom="5" columns="*,*,*">
+    <Label col="0" text="&#xf05a;" [nsRouterLink]="['/informations']" marginLeft="10%" class="nt-icon fas"></Label>
+    <Label col="1" text="&#xf071;" [nsRouterLink]="['/danger']" marginLeft="10%" class="nt-icon fas"></Label>
+    <Label col="2" text="&#xf479;" [nsRouterLink]="['/sos']" marginLeft="10%" class="nt-icon fas"></Label>
+</GridLayout> -->
+
+
+<GridLayout verticalAlignment="bottom">
+    <GridLayout columns="*, *, *" height="70"  backgroundColor="#FFFF00">
+        <GridLayout  col="0" #tabHighlight>
+        </GridLayout>
+        <GridLayout col="0" backgroundColor="#000000">
+            <Image #image1 src="~/app/images/infos.png" [nsRouterLink]="['/informations']" height="60"
+                width="60"></Image>
+        </GridLayout>
+        <GridLayout col="1" backgroundColor="#000000">
+            <Image #image2 src="~/app/images/locaDanger.png" [nsRouterLink]="['/danger']" height="60"
+                width="60"></Image>
+        </GridLayout>
+        <GridLayout col="2" backgroundColor="#000000">
+            <Image #image3 src="~/app/images/locaSecours.png" [nsRouterLink]="['/sos']" height="60"
+                width="60"></Image>
+        </GridLayout>
+    </GridLayout>
+</GridLayout>

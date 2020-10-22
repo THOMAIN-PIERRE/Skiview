@@ -1,0 +1,52 @@
+<ScrollView>
+    <GridLayout class="page__content" backgroundColor="#3E3F32"marginBottom="15%">
+
+        <FlexboxLayout backgroundColor="#3E3F32" flexDirection="row" flexWrap="wrap" justifyContent="space-around"
+            marginTop="50%">
+            <Label backgroundColor="#3E3F32" class="page__content-placeholder" text="CAUSE DE BLESSURE" row="0"
+                color="white" fontSize="30em" fontWeight="Bold" marginbottom="10%" marginLeft="10%"></Label>
+            <Label class="position" color="white" paddingTop="25%" paddingLeft="7%" class="bouttonchute"
+                class="iconetotal" text="E" color="white" fontWeight="Bold" width="100em" height="100em"
+                backgroundColor="#FF0000" (tap)="causeBlessureSosCollision('Collision')"></Label>
+            <Label class="bouttonchute" color="white" paddingTop="30%" paddingLeft="3%" text="M" class="iconecol"
+                width="100em" height="100em" fontWeight="Bold" backgroundColor="#FF0000"
+                (tap)="causeBlessureSosChute('Chute')"></Label>
+            <Label class="bouttonchute" color="white" paddingTop="20%" paddingLeft="0%" text="F" class="iconetotal"
+                width="100em" height="100em" fontWeight="Bold" backgroundColor="#FF0000"
+                (tap)="causeBlessureSosAutres('Autres')"></Label>
+            <Label backgroundColor="#3E3F32" color="white" class="page__content-placeholder" text="TYPE DE BLESSURES"
+                row="0" color="white" fontWeight="Bold" fontSize="30em" marginLeft="10%"></Label>
+            <Label class="bouttonchute" color="white" paddingTop="25%" paddingLeft="7%" text="B" class="iconetete"
+                width="100em" height="100em" fontWeight="Bold" backgroundColor="#FF0000"
+                (tap)="typeBlessureSosTete('Tete')"></Label>
+            <Label class="bouttonchute" color="white" paddingTop="25%" paddingLeft="7%" text="C" class="iconebras"
+                width="100em" height="100em" fontWeight="Bold" backgroundColor="#FF0000"
+                (tap)="typeBlessureSosBras('Bras')"></Label>
+            <Label class="bouttonchute" color="white" paddingTop="25%" paddingLeft="15%" text="K" class="iconetotal"
+                width="100em" height="100em" fontWeight="Bold" backgroundColor="#FF0000"
+                (tap)="typeBlessureSosEpaule('Epaule')"></Label>
+            <Label class="bouttonchute" color="white" paddingTop="25%" paddingLeft="17%" text="J" class="iconetotal"
+                width="100em" height="100em" fontWeight="Bold" backgroundColor="#FF0000"
+                (tap)="typeBlessureSosGenou('Genou')"></Label>
+            <Label class="bouttonchute" color="white" paddingTop="25%" paddingLeft="10%" class="picto" text="A"
+                width="100em" height="100em" fontWeight="Bold" backgroundColor="#FF0000"
+                (tap)="typeBlessureSosJambe('Jambe')"></Label>
+            <Label class="bouttonchute" color="white" paddingTop="20%" paddingLeft="0%" text="F" class="iconetotal"
+                width="100em" height="100em" fontWeight="Bold" backgroundColor="#FF0000"
+                (tap)="typeBlessureSosAutre('Autre')"></Label>
+            <!-- <Label class="bouttonchute" color="white" paddingTop="70%" paddingLeft="35%" text="" width="250px" height="250px" fontWeight="Bold" backgroundColor="#3E3F32"marginBottom="20%"></Label> -->
+            <Button text="Envoyer" backgroundColor="#0DF24D" color="white" (tap)="submit()" fontSize="Large"
+                class="soumission" marginTop="100%" marginBottom="10%"></Button> 
+        </FlexboxLayout>
+    </GridLayout>
+</ScrollView>
+
+<GridLayout verticalAlignment="bottom">
+    <GridLayout columns="*" height="70"  backgroundColor="#FFFF00">
+        <GridLayout  col="0" #tabHighlight>
+        </GridLayout>
+        <GridLayout col="0" backgroundColor="#000000">
+            <Label [nsRouterLink]="['/utilisateur/choixstation']" col="0" row="0" text="&#xf015;" class="nt-icon fas"  textAlign="center" verticalAlignment="center" horizontalAlignment="center"></Label>
+        </GridLayout>
+    </GridLayout>
+</GridLayout>

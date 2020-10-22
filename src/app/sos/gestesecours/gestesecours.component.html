@@ -1,0 +1,34 @@
+<ScrollView>
+    <StackLayout class="pagecontent" backgroundColor="#F2D107">
+        <Label class="pagecontent-placeholder" text="Gestes de Premiers Secours" fontWeight="bold" fontSize="25px"
+            color="black"></Label>
+        <StackLayout class="hr"></StackLayout>
+        <GridLayout rows="100, 250, 50, 10" *ngFor="let item of news">
+            <Label row="0" [text]="item.titre" fontWeight="bold" marginLeft="10%" fontSize="15px" textAlign="center"
+                class="titre"></Label>
+            <Image row="1" [src]="item.img" height="150%"></Image>
+            <StackLayout class="hr" row="3"></StackLayout>
+        </GridLayout>
+
+
+    </StackLayout>
+
+</ScrollView> 
+<GridLayout verticalAlignment="bottom">
+    <GridLayout columns="*, *, *" height="70"  backgroundColor="#FFFF00">
+        <GridLayout  col="0" #tabHighlight>
+        </GridLayout>
+        <GridLayout col="0" backgroundColor="#000000">
+            <Image #image1 src="~/app/images/infos.png" [nsRouterLink]="['/informations']" height="60"
+                width="60"></Image>
+        </GridLayout>
+        <GridLayout col="1" backgroundColor="#000000">
+            <Image #image2 src="~/app/images/locaDanger.png" [nsRouterLink]="['/danger']" height="60"
+                width="60"></Image>
+        </GridLayout>
+        <GridLayout col="2" backgroundColor="#000000">
+            <Image #image3 src="~/app/images/locaSecours.png" [nsRouterLink]="['/sos']" height="60"
+                width="60"></Image>
+        </GridLayout>
+    </GridLayout>
+</GridLayout>

@@ -1,0 +1,41 @@
+<ScrollView> 
+<GridLayout rows="100, 460">
+    <ContentView row="0" width="2000px" backgroundColor="#000000" class="bandeau_photo"></ContentView>
+    <Image row="1" src="https://www.telegraph.co.uk/content/dam/Travel/ski/Crans-Montana-avalanche-skiers-KEYSTONE-ANTHONY%20ANEX.jpg?imwidth=450"  width="800px" stretch="aspectFit"></Image>
+    
+    
+    <Label [nsRouterLink]="['/danger/photo']" row="2" text="&#xf1f8;" class="nt-icon fas" id="bin"></Label>
+    <ContentView row="3" id="circle" width="300px" height="300px" ></ContentView>
+    <!-- <Label row="3" text="&#xf1f8;" class="nt-icon fas" id="bin"></Label> -->
+</GridLayout>
+</ScrollView>   
+<FlexboxLayout  flexDirection="row" justifyContent="space-around" align-items="center" class="numberPictures">
+    <Label text="&#xf030;" class="nt-icon fas"></Label>
+    <Label [nsRouterLink]="['/danger/recapitulatif']" text="1/1"></Label>
+</FlexboxLayout>       
+<!-- <FlexboxLayout flexDirection="row" justifyContent="space-around">
+    <BottomNavigation height="100%">
+        <TabStrip>
+            <TabStripItem>
+                <Label [nsRouterLink]="['']" text="&#xf053;" class="nt-icon fas" id="slider"></Label>
+            </TabStripItem>
+            <TabStripItem>
+                <Label [nsRouterLink]="['']" text="PRECEDENT" id="slider"></Label>
+            </TabStripItem>
+            <TabStripItem>
+                <Label [nsRouterLink]="['']" text="SUIVANT" id="slider"></Label>
+            </TabStripItem>
+            <TabStripItem>
+                <Label [nsRouterLink]="['']" text="&#xf054;" class="nt-icon fas" id="slider"></Label>
+            </TabStripItem>
+        </TabStrip>
+    </BottomNavigation>
+</FlexboxLayout> -->
+
+<FlexboxLayout flexDirection="row" justifyContent="space-around" alignItems="flex-end" class="slider">
+                  
+    <Label [nsRouterLink]="['/danger/photo']" text="< PRECEDENT" id="slider" color="#000000"  marginBottom="20"></Label>
+
+    <Label [nsRouterLink]="['/danger/recapitulatif']" text="SUIVANT >" id="slider" color="#000000"  marginBottom="20"></Label>       
+
+</FlexboxLayout>

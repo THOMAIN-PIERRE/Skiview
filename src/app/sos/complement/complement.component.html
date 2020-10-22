@@ -1,0 +1,24 @@
+<ScrollView>
+    <GridLayout rows="30,30,30,30,30,30,30,10,50,50" backgroundColor="#3E3F32">
+        <StackLayout class="hr" row="0"></StackLayout>
+        <Label class="page__content-placeholder" text="Les secours sont prevenus" marginTop="0" fontWeight="Bold"
+            fontSize="20em" row="1" color="White"></Label>
+        <Label class="page__content-placeholder" text="Ils seront bientot à vos cotés" marginTop="0" fontWeight="Bold"
+            fontSize="20em" row="2" color="White"></Label>
+        <Label class="page__content-placeholder" text="Restez calme" marginTop="0" fontSize="20em" fontWeight="Bold"
+            row="3" color="White"></Label>
+        <Label class="page__content-placeholder" text="Respirez profondement" marginTop="0" fontSize="20em"
+            fontWeight="Bold" row="4" color="White"></Label>
+        <Label class="page__content-placeholder" text="Respirez Calmement" marginTop="0" fontSize="20em"
+            fontWeight="Bold" row="5" color="White"></Label>
+        <Label class="page__content-placeholder" text="" color="black" marginTop="0" fontSize="18px" fontWeight="Bold"
+            row="6"></Label>
+        <StackLayout class="hr" row="7" color="White"></StackLayout>
+        <Label class="page__content-placeholder" [nsRouterLink]="['/sos/gestesecours']" width="90%" paddingLeft="60%"
+            paddingTop="5%" textAlign="center" height="10%" text=" Gestes de Premiers secours" backgroundColor="#FDE407"
+            color="black" marginTop="0" fontSize="15em" fontWeight="Bold" row="8"></Label>
+        <Label class="page__content-placeholder" [nsRouterLink]="['/sos/nature']" width="90%" paddingLeft="60%"
+            paddingTop="5%" textAlign="center" height="10%" text=" Complement d'Informations" backgroundColor="#FF0000"
+            marginTop="0" fontSize="15em" fontWeight="Bold" row="9" color="White"></Label>
+    </GridLayout>
+</ScrollView>
