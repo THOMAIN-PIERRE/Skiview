@@ -12,8 +12,6 @@ import { FormulaireDossierMedicalComponent } from './formulaire-dossier-medical/
 import { FormulaireContactComponent } from './formulaire-contact/formulaire-contact.component';
 import { FormulaireIdentiteComponent } from './formulaire-identite/formulaire-identite.component';
 
-
-
 @NgModule({
   declarations: [AccueilcarnetComponent, CguComponent, FormulaireComponent, CarnetrempliComponent, FormulaireConstantesComponent, FormulaireDossierMedicalComponent, FormulaireContactComponent, FormulaireIdentiteComponent],
   imports: [

@@ -1,39 +1,27 @@
 <ScrollView orientation="vertical">
    <GridLayout class="page__content" backgroundColor="#3E3F32" rows="40,40,40,40,40,40,40,40,40,40,100" columns="*,*,*">
-
-       <!-- <Switch checked="true" row="0" column="0" [(ngModel)]="bool" class="switch"></Switch> -->
-       <Label class="page__content-placeholder" text="SEVERES" fontSize="20em" row="0" column="0" colspan="3" color="white"
-           fontWeight="Bold"></Label>
-        <!-- <Label text="Sauvegarder" (tap)="saveetat1()" class="btn btn-primary" row="1" column="1" color="white"></Label>
-       <Label text="Effacer" (tap)="removeBoolean()" class="btn btn-primary" row="1" column="2" color="white"></Label> -->
-    <StackLayout class="hr" row="1" colspan="3"></StackLayout>
-
-    <!-- <Switch checked="true" row="3" column="0" [(ngModel)]="bool" class="switch"></Switch> -->
-       <Label class="page__content-placeholder" text="SERIEUSES" fontSize="20em" row="2" column="0" colspan="3" color="white"
-           fontWeight="Bold"></Label>
-        <!-- <Label text="Sauvegarder" (tap)="saveetat2()" class="btn btn-primary" row="4" column="1" color="white"></Label>
-       <Label text="Effacer" (tap)="removeBoolean()" class="btn btn-primary" row="4" column="2" color="white"></Label> -->
-    <StackLayout class="hr" row="4" colspan="3"></StackLayout>
-
-    <!-- <Switch checked="true" row="6" column="0" [(ngModel)]="bool" class="switch"></Switch> -->
-       <Label class="page__content-placeholder" text="MODEREES" fontSize="20em" row="5" column="0" colspan="3" color="white"
-           fontWeight="Bold"></Label>
-        <!-- <Label text="Sauvegarder" (tap)="saveetat3()" class="btn btn-primary" row="7" column="1" color="white"></Label>
-       <Label text="Effacer" (tap)="removeBoolean()" class="btn btn-primary" row="7" column="2" color="white"></Label> -->
-    <StackLayout class="hr" row="6" colspan="3"></StackLayout>
-    
-    <!-- <Switch checked="true" row="9" column="0" [(ngModel)]="bool" class="switch"></Switch> -->
-       <Label class="page__content-placeholder" text="LEGERES" fontSize="20em" row="7" column="0" colspan="3" color="white"
-           fontWeight="Bold"></Label>
-        <!-- <Label text="Sauvegarder" (tap)="saveetat4()" class="btn btn-primary" row="10" column="1" color="white"></Label>
-       <Label text="Effacer" (tap)="removeBoolean()" class="btn btn-primary" row="10" column="2" color="white"></Label> -->
-    <StackLayout class="hr" row="8" colspan="3"></StackLayout>
-       
+      <!-- <Switch checked="true" row="0" column="0" [(ngModel)]="bool" class="switch"></Switch> -->
+      <Label class="page__content-placeholder" text="SEVERES" fontSize="20em" row="0" column="0" colspan="3" color="white" fontWeight="Bold"></Label>
+      <!-- <Label text="Sauvegarder" (tap)="saveetat1()" class="btn btn-primary" row="1" column="1" color="white"></Label>
+      <Label text="Effacer" (tap)="removeBoolean()" class="btn btn-primary" row="1" column="2" color="white"></Label> -->
+      <StackLayout class="hr" row="1" colspan="3"></StackLayout>
+      <!-- <Switch checked="true" row="3" column="0" [(ngModel)]="bool" class="switch"></Switch> -->
+      <Label class="page__content-placeholder" text="SERIEUSES" fontSize="20em" row="2" column="0" colspan="3" color="white" fontWeight="Bold"></Label>
+      <!-- <Label text="Sauvegarder" (tap)="saveetat2()" class="btn btn-primary" row="4" column="1" color="white"></Label>
+      <Label text="Effacer" (tap)="removeBoolean()" class="btn btn-primary" row="4" column="2" color="white"></Label> -->
+      <StackLayout class="hr" row="4" colspan="3"></StackLayout>
+      <!-- <Switch checked="true" row="6" column="0" [(ngModel)]="bool" class="switch"></Switch> -->
+      <Label class="page__content-placeholder" text="MODEREES" fontSize="20em" row="5" column="0" colspan="3" color="white" fontWeight="Bold"></Label>
+      <!-- <Label text="Sauvegarder" (tap)="saveetat3()" class="btn btn-primary" row="7" column="1" color="white"></Label>
+      <Label text="Effacer" (tap)="removeBoolean()" class="btn btn-primary" row="7" column="2" color="white"></Label> -->
+      <StackLayout class="hr" row="6" colspan="3"></StackLayout>
+      <!-- <Switch checked="true" row="9" column="0" [(ngModel)]="bool" class="switch"></Switch> -->
+      <Label class="page__content-placeholder" text="LEGERES" fontSize="20em" row="7" column="0" colspan="3" color="white" fontWeight="Bold"></Label>
+      <!-- <Label text="Sauvegarder" (tap)="saveetat4()" class="btn btn-primary" row="10" column="1" color="white"></Label>
+      <Label text="Effacer" (tap)="removeBoolean()" class="btn btn-primary" row="10" column="2" color="white"></Label> -->
+      <StackLayout class="hr" row="8" colspan="3"></StackLayout>   
    </GridLayout>
-
-
 </ScrollView>
 <GridLayout>
-   <Button text="Envoyer" [nsRouterLink]="['/sos/appel']" backgroundColor="#0DF24D" color="white" (tap)="removeAll()"
-       fontSize="Large" class="soumission" marginTop="90%"></Button>
+   <Button text="Envoyer" [nsRouterLink]="['/sos/appel']" backgroundColor="#0DF24D" color="white" (tap)="removeAll()" fontSize="Large" class="soumission" marginTop="90%"></Button>
 </GridLayout>

@@ -14,13 +14,13 @@
     <Label class="pageLabel" text="GESTION DU COMPTE"></Label>
 </ActionBar>
 <ScrollView>
-<StackLayout class="form">
-    <Label text="GESTION E-MAIL" class="motDePasse"></Label>   
-    <TextField class="formSanteCss" hint="E-mail associé au compte" color="black" background="lightgrey" width="90%" height="50rem" borderRadius="10%" paddingLeft="8%" fontSize="20rem"></TextField>
-    <TextField class="formSanteCss" hint="Nouvel E-mail" color="black" background="lightgrey" width="90%" height="50rem" borderRadius="10%" paddingLeft="8%" fontSize="20rem"></TextField>
-    <TextField class="formSanteCss" hint="Confirmation E-mail" color="black" background="lightgrey" width="90%" height="50rem" borderRadius="10%" paddingLeft="8%" fontSize="20rem"></TextField>
-    <Button [nsRouterLink]="['/utilisateur/gestioncompte']" text="MODIFIER" width="90%" height="50rem" backgroundColor="yellow"; color="black"></Button> 
-</StackLayout>
+    <StackLayout class="form">
+        <Label text="GESTION E-MAIL" class="motDePasse"></Label>   
+        <TextField class="formSanteCss" hint="E-mail associé au compte" color="black" background="lightgrey" width="90%" height="50rem" borderRadius="10%" paddingLeft="8%" fontSize="20rem"></TextField>
+        <TextField class="formSanteCss" hint="Nouvel E-mail" color="black" background="lightgrey" width="90%" height="50rem" borderRadius="10%" paddingLeft="8%" fontSize="20rem"></TextField>
+        <TextField class="formSanteCss" hint="Confirmation E-mail" color="black" background="lightgrey" width="90%" height="50rem" borderRadius="10%" paddingLeft="8%" fontSize="20rem"></TextField>
+        <Button [nsRouterLink]="['/utilisateur/gestioncompte']" text="MODIFIER" width="90%" height="50rem" backgroundColor="yellow"; color="black"></Button> 
+    </StackLayout>
 </ScrollView>
 
 
@@ -36,51 +36,3 @@
 
 
 
-<!-- <StackLayout class="form" marginTop="2%" rows="20, 20, 20, 20">
-    <StackLayout class="input-field">
-    <Label text="GESTION E-MAIL" class="motDePasse"></Label>
-    <TextField class="" hint="E-mail associé au compte" marginTop="5%"></TextField>
-    </StackLayout>
-
-    <StackLayout marginTop="5%">
-      <TextField class="input" hint="Nouvel E-mail" ></TextField>
-    </StackLayout>
-
-    <StackLayout marginTop="5%">
-      <TextField class="input"hint="Confirmation E-mail" ></TextField>
-    </StackLayout>
-
-    <FlexboxLayout flexDirection="row" flexWrap="wrap" justifyContent="center">  
-        <Button [nsRouterLink]="['/utilisateur/gestioncompte']" text="VALIDER" class="valider_mdp"></Button> 
-    </FlexboxLayout>
-
-</StackLayout> -->
-
-
-
-
-
-<!-- <StackLayout class="form">
-    <StackLayout class="input-field">
-    <Label text="GESTION E-MAIL" class="email"></Label>
-    <TextField class="input" hint="E-mail actuel"></TextField>
-    <TextField class="input" hint="Nouvel E-mail"></TextField>
-    <TextField class="input" hint="confirmation E-mail"></TextField>
-    <FlexboxLayout flexDirection="row" flexWrap="wrap" justifyContent="flex-start">  
-    <Button [nsRouterLink]="['/utilisateur/gestioncompte']" text="VALIDER" class="valider_email" backgroundColor= ""></Button> 
-    </FlexboxLayout>
-</StackLayout>
-<BottomNavigation height="100%">
-    <TabStrip>
-        <TabStripItem>
-            <Label col="0" text="&#xf05a;" class="nt-icon fas"></Label>
-        </TabStripItem>
-        <TabStripItem>
-            <Label col="1" text="&#xf041;" class="nt-icon fas"></Label>
-        </TabStripItem>
-        <TabStripItem>
-            <Label col="2" text="&#xf3c5;" class="nt-icon fas"></Label>
-        </TabStripItem>
-    </TabStrip>
-</BottomNavigation>
-</StackLayout> -->

@@ -1,96 +1,20 @@
 <ScrollView>
     <GridLayout class="page__content" backgroundColor="#3E3F32" >
-        <FlexboxLayout backgroundColor="#3E3F32" flexDirection="row" flexWrap="wrap" justifyContent="space-around"
-            margin-top="50%" rows="200,50,50,50,50">
-            <Label backgroundColor="#3E3F32" class="page__content-placeholder" text="" marginTop="50%"
-                row="0" color="white" fontSize=25px; fontWeight="Bold" marginbottom="10%" marginLeft="100%"></Label>
-            <Label backgroundColor="#3E3F32" class="page__content-placeholder" text="" marginTop="50%"
-                row="1" color="white" fontSize=25px; fontWeight="Bold" marginbottom="10%" marginLeft="100%"></Label>
-            <Label backgroundColor="#3E3F32" class="page__content-placeholder" text="" marginTop="50%"
-                row="2" color="white" fontSize=25px; fontWeight="Bold" marginbottom="10%" marginLeft="100%"></Label>
-
-            <Label backgroundColor="#3E3F32" class="page__content-placeholder" text="vous êtes :" marginTop="50%"
-                row="3" color="white" fontSize="50em" fontWeight="Bold" marginbottom="10%" marginLeft="10%"></Label>
-            <ContentView [nsRouterLink]="['/sos/gravite']" row="4" textAlign="center" class="bouttonchute"text="" width="150em" height="150em" marginLeft="5%"
-                color="white" backgroundColor="#FF0000">
-                <Label class="page__content-placeholder" text="VICTIME" [nsRouterLink]="['/sos/gravite']" (tap)="etatsosVictime('Victime')"color="white" fontSize="25em" fontWeight="Bold"
-                    marginbottom="10%" marginLeft="0%"></Label>
+        <FlexboxLayout backgroundColor="#3E3F32" flexDirection="row" flexWrap="wrap" justifyContent="space-around" margin-top="50%" rows="200,50,50,50,50">
+            <Label backgroundColor="#3E3F32" class="page__content-placeholder" text="" marginTop="50%" row="0" color="white" fontSize=25px; fontWeight="Bold" marginbottom="10%" marginLeft="100%"></Label>
+            <Label backgroundColor="#3E3F32" class="page__content-placeholder" text="" marginTop="50%" row="1" color="white" fontSize=25px; fontWeight="Bold" marginbottom="10%" marginLeft="100%"></Label>
+            <Label backgroundColor="#3E3F32" class="page__content-placeholder" text="" marginTop="50%" row="2" color="white" fontSize=25px; fontWeight="Bold" marginbottom="10%" marginLeft="100%"></Label>
+            <Label backgroundColor="#3E3F32" class="page__content-placeholder" text="vous êtes :" marginTop="50%" row="3" color="white" fontSize="50em" fontWeight="Bold" marginbottom="10%" marginLeft="10%"></Label>
+            <ContentView [nsRouterLink]="['/sos/gravite']" row="4" textAlign="center" class="bouttonchute"text="" width="150em" height="150em" marginLeft="5%" color="white" backgroundColor="#FF0000">
+                <Label class="page__content-placeholder" text="VICTIME" [nsRouterLink]="['/sos/gravite']" (tap)="etatsosVictime('Victime')"color="white" fontSize="25em" fontWeight="Bold" marginbottom="10%" marginLeft="0%"></Label>
             </ContentView>
-            <ContentView row="4" text="" [nsRouterLink]="['/sos/gravite']" class="bouttonchute"width="150em" height="150em" color="white" textAlign="center"
-                marginLeft="0%" backgroundColor="#106D0E">
-
-                <Label class="page__content-placeholder" [nsRouterLink]="['/sos/gravite']" (tap)="etatSosTemoin('Temoin')"text="TEMOIN" color="white" fontSize="25em" fontWeight="Bold"
-                    marginbottom="10%" marginLeft="0%"></Label>
+            <ContentView row="4" text="" [nsRouterLink]="['/sos/gravite']" class="bouttonchute"width="150em" height="150em" color="white" textAlign="center" marginLeft="0%" backgroundColor="#106D0E">
+                <Label class="page__content-placeholder" [nsRouterLink]="['/sos/gravite']" (tap)="etatSosTemoin('Temoin')"text="TEMOIN" color="white" fontSize="25em" fontWeight="Bold" marginbottom="10%" marginLeft="0%"></Label>
             </ContentView>
         </FlexboxLayout>
-    </GridLayout>
-    
+    </GridLayout> 
 </ScrollView>
 
-
-<!-- <GridLayout class="search__page__content">
-    <Label class="greyPage" id="vousEtes" text="Vous êtes"></Label>
-    <Label class="greyPage" [nsRouterLink]="['/sos/gravite']"id="redVictime" width="150" height="150" backgroundColor="#FF0000"></Label>
-    <Label class="greyPage" [nsRouterLink]="['/sos/gravite']" id="victime" text="VICTIME"></Label>
-    <Label class="greyPage" [nsRouterLink]="['/sos/gravite']"id="greenTemoin" width="150" height="150" backgroundColor="#106D0E"></Label>
-    <Label class="greyPage" [nsRouterLink]="['/sos/gravite']"id="temoin" text="TEMOIN"></Label>
-</GridLayout> -->
-
-
-<!-- <ScrollView>
-    <GridLayout class="page__content" backgroundColor="#3E3F32" >
-        <FlexboxLayout backgroundColor="#3E3F32" flexDirection="row" flexWrap="wrap" justifyContent="space-around"
-            margin-top="50%" rows="200,50,50,50,50">
-            <Label backgroundColor="#3E3F32" class="page__content-placeholder" text="" marginTop="50%"
-                row="0" color="white" fontSize=25px; fontWeight="Bold" marginbottom="10%" marginLeft="100%"></Label>
-            <Label backgroundColor="#3E3F32" class="page__content-placeholder" text="" marginTop="50%"
-                row="1" color="white" fontSize=25px; fontWeight="Bold" marginbottom="10%" marginLeft="100%"></Label>
-            <Label backgroundColor="#3E3F32" class="page__content-placeholder" text="" marginTop="50%"
-                row="2" color="white" fontSize=25px; fontWeight="Bold" marginbottom="10%" marginLeft="100%"></Label>
-
-            <Label backgroundColor="#3E3F32" class="page__content-placeholder" text="La victime est un" marginTop="50%"
-                row="3" color="white" fontSize=25px; fontWeight="Bold" marginbottom="10%" marginLeft="10%"></Label>
-            <ContentView [nsRouterLink]="['/sos/gravite']" row="4" textAlign="center" class="bouttonchute"text="" width="400px" height="400px" marginLeft="5%"
-                color="white" backgroundColor="#FF0000">
-                <Label class="page__content-placeholder" text="VICTIME" [nsRouterLink]="['/sos/gravite']" color="white" fontSize=25px; fontWeight="Bold"
-                    marginbottom="10%" marginLeft="0%"></Label>
-            </ContentView>
-            <ContentView row="4" text="" [nsRouterLink]="['/sos/gravite']" class="bouttonchute"width="400px" height="400px" color="white" textAlign="center"
-                marginLeft="0%" backgroundColor="#106D0E">
-
-                <Label class="page__content-placeholder" [nsRouterLink]="['/sos/gravite']" text="TEMOIN" color="white" fontSize=25px; fontWeight="Bold"
-                    marginbottom="10%" marginLeft="0%"></Label> -->
-
-                    <!-- <Image src="~/app/images/snow.png" stretch="aspectFit"></Image> -->
-                    <!-- <Image src="~/images/snow.png" stretch="aspectFit"></Image> -->
-                                                                                                    <!-- <Image src="res://tete" stretch="aspectFill"></Image> -->
-                    <!-- <Image src="~/app/images/snow.png"></Image>
-                    <Image src="~/app/images/slope.png"></Image> -->
-                    <!-- <Image src="~/images/snow.png"></Image> -->
-                    <!-- <Image src="~/images/slope.png"></Image>  -->
-                    <!-- <Image src="res://tete" stretch="none"></Image> -->
-                    <!-- <Image src="~/images/logo.png" loadMode="async" stretch="aspectFit"></Image> -->
-                    <!-- <Image src="~/images/snow.png"></Image> -->
-
-            <!-- </ContentView>
-        </FlexboxLayout>
-    </GridLayout>
-    
-</ScrollView>-->
-
-
-<!-- 
-
-Test d'ajout de video à l'appli !!!
-
-
-<StackLayout>
-    <VideoPlayer : Video id="nativeVideoPlayer" controls="true" autoplay="true" height="300" src="~/app/videos/Skiers- 13450.mp4"></VideoPlayer>
-    <VideoPlayer : Video id="nativeVideoPlayer" controls="true" autoplay="true" height="300" src="~/videos/Skiers- 13450.mp4"></VideoPlayer>
-	<Button class="btn btn-primary" text="Play" (tap)="play()"></Button>
-	<Button class="btn btn-primary" text="Pause" (tap)="pause()"></Button>
-	<Button class="btn btn-primary" text="Go To 30 seconds" (tap)="seekToTime()"></Button>
-</StackLayout> -->
 
 
 

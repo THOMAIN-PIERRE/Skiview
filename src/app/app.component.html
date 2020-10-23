@@ -15,50 +15,36 @@ https://docs.nativescript.org/angular/ui/professional-ui-components/ng-SideDrawe
                     <Image col="0" src="~/app/images/accueil.png" height="30" width="30"></Image>
                     <Label col="1" text="Pierre" class="p-r-10" marginLeft="15"></Label>
                 </GridLayout>
-
                 <StackLayout class="hr"></StackLayout>
-
                 <GridLayout columns="auto, *" class="nt-drawer__list-item" (tap)="onNavItemTap('/informations')">
                     <Image col="0" src="~/app/images/infos.png" height="30" width="30"></Image>
                     <Label col="1" text="Informations" class="p-r-10" marginLeft="15"></Label>
                 </GridLayout>
-
                 <StackLayout class="hr"></StackLayout>
-
                 <GridLayout columns="auto, *" class="nt-drawer__list-item" (tap)="onNavItemTap('/danger')">
                     <Image col="0" src="~/app/images/locaDanger.png" height="30" width="30"></Image>
                     <Label col="1" text="Signaler un danger" class="p-r-10" marginLeft="15"></Label>
                 </GridLayout>
-
                 <StackLayout class="hr"></StackLayout>
-
                 <GridLayout columns="auto, *" class="nt-drawer__list-item" (tap)="onNavItemTap('/sos')">
                     <Image col="0" src="~/app/images/locaSecours.png" height="30" width="30"></Image>
                     <Label col="1" text="Contacter les secours" class="p-r-10" marginLeft="15"></Label>
                 </GridLayout>
-
                 <StackLayout class="hr"></StackLayout>
-
                 <GridLayout columns="auto, *" class="nt-drawer__list-item" (tap)="onNavItemTap('/danger/historiqueSignalement')">
                     <Image col="0" src="~/app/images/signalement.png" height="30" width="30"></Image>
                     <Label col="1" text="Mes signalements" class="p-r-10" marginLeft="15"></Label>
                 </GridLayout>
-
                 <StackLayout class="hr"></StackLayout>
-
                 <GridLayout columns="auto, *" class="nt-drawer__list-item" (tap)="onNavItemTap('/carnet')">
                     <Image col="0" src="~/app/images/sante.png" height="30" width="30"></Image>
                     <Label col="1" text="Carnet de santé" class="p-r-10" marginLeft="15"></Label>
                 </GridLayout>
-
                 <StackLayout class="hr"></StackLayout>
-
                 <Button [nsRouterLink]="['/utilisateur/connexion']" (tap)="onNavItemTap('/utilisateur/connexion')" text="DECONNEXION" class="btn btn-success"></Button> 
-
             </StackLayout>
         </ScrollView>
     </GridLayout>
-
     <page-router-outlet tkMainContent></page-router-outlet>
 </RadSideDrawer>
 

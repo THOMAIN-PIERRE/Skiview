@@ -10,11 +10,9 @@
         <Button [nsRouterLink]="['/utilisateur/connexion']" text="JE REFUSE" backgroundColor="#0DF24D" color="white" fontSize="20rem" class="soumission" marginTop="66%" marginBottom="10%"></Button> -->
     </GridLayout> 
 </ScrollView> 
-
 <GridLayout verticalAlignment="bottom">
     <GridLayout columns="*, *" height="70"  backgroundColor="#FFFF00">
-        <GridLayout  col="0" #tabHighlight>
-        </GridLayout>
+        <GridLayout  col="0" #tabHighlight></GridLayout>
         <GridLayout col="0" backgroundColor="#000000">
             <Label [nsRouterLink]="['/carnet/formulaire']" col="0" row="0" text="&#xf13a;" class="nt-icon fas" verticalAlignment="center" horizontalAlignment="center"></Label>
             <!-- <Image #image1 src="~/app/images/infos.png" height="60" width="60"></Image> -->
@@ -22,8 +20,7 @@
         <GridLayout col="1" backgroundColor="#000000">
             <Label [nsRouterLink]="['/carnet']" col="1" row="0" text="&#xf057;" class="nt-icon fas" verticalAlignment="center" horizontalAlignment="center"></Label>
             <!-- <Image #image2 src="~/app/images/locaDanger.png" height="60" width="60"></Image> -->
-        </GridLayout>
-        
+        </GridLayout>  
     </GridLayout>
 </GridLayout>
 
@@ -31,35 +28,4 @@
 
 
 
-    <!-- <GridLayout rows="*" columns="*,*" id="basDePage">
-        <Label [nsRouterLink]="['/carnet/formulaire']" col="0" row="0" text="&#xf13a;" class="nt-icon fas"></Label>
-        <Label [nsRouterLink]="['/carnet']" col="1" row="0" text="&#xf057;" class="nt-icon fas"></Label>
-    </GridLayout> -->
-
-
-
-
-
-<!-- <ScrollView>
-    <GridLayout class="page__content" rows="200,200,200,90" class="condition">
-
-        <Label class="page__content-placeholder"
-            text="   L’application Skiview vous permet d’enregistrer des données cruciales concernant votre état de santé susceptibles de faciliter,d’améliorer, de sécuriser votre prise en charge en cas de blessure sur le domaine skiable. "
-            row="0" color="black" textWrap="true"></Label>
-        <Label class="page__content-placeholder"
-            text="    Vous êtes libre de choisir d’utiliser ou non ce service. Le formulaire de renseignement des données ne contient aucun champs obligatoire. C’est vous qui décidez des informations que vous consentez à partager avec nos équipes."
-            row="1" color="black" textWrap="true"></Label>
-        <Label class="page__content-placeholder"
-            text="    Ces informations leur permettront de vous prendre en charge plus efficacement et de façon personnalisée. Elles leur permettront également d’assurer un meilleur passage de relais avec les ambulanciers et/ou le médecin qui vous prendrons en charge."
-            row="2" color="black" textWrap="true"></Label>
-        <Label class="page__content-placeholder"
-            text=""
-            row="3" color="black" textWrap="true"></Label>
-
-    </GridLayout>
-
-</ScrollView>
-<GridLayout>
-    <Button [nsRouterLink]="['/carnet/formulaire']" text="Accepter les conditions" backgroundColor="#0DF24D" color="white" fontSize="Large"
-        class="soumission" marginTop="66%" marginBottom="10%"></Button>
-</GridLayout> -->
+   

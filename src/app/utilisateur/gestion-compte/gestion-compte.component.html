@@ -14,83 +14,25 @@
     <Label class="pageLabel" text="GESTION DU COMPTE"></Label>
 </ActionBar>
 <ScrollView>
-<StackLayout>
-<!-- <GridLayout rows="50, 100" class="photo_profil">
-    <Label row="0" text="PHOTO" class="photo_profil"></Label>
-    <ContentView row="1" width="450px" backgroundColor="#C4C4C4" class="photo_danger"></ContentView>
-</GridLayout> -->
-<!-- <FlexboxLayout  flexDirection="column" justifyContent="center">
-    <Label text="&#xf030;" class="nt-icon fas" id="appPhoto"></Label>
-</FlexboxLayout>  -->
-
-<!-- <GridLayout rows="50, 220">
-    <!-- <Label row="0" text="PHOTO" class="photo_profil" fontWeight="Bold" fontSize="18"></Label> -->
-    <!-- <Label row="0" text="Changer la photo" id="camera3" textAlign="center"></Label> -->
-    <!-- <ContentView row="1" width="45%" backgroundColor="#C4C4C4" class="photo_danger" text="Changer la photo"></ContentView>
-    <Label row="1" text="&#xf03e;" class="nt-icon fas" id="camera"></Label>
-    
-</GridLayout> -->
-
-<!-- <GridLayout rows="220">
-    <ContentView row="0" width="50%" backgroundColor="#C4C4C4" class="photo_danger"></ContentView>
-</GridLayout>
-<FlexboxLayout  rows="50, 120" flexDirection="column" justifyContent="center">
-    <Label text="&#xf030;" row="0" class="nt-icon fas" id="cameraProfil"></Label>
-    <Label text="PRENDRE UNE PHOTO" row="0" id="cameraProfil2"></Label>
-    <ContentView row="1" width="45%" backgroundColor="#C4C4C4" class="photo_danger"></ContentView>
-</FlexboxLayout>  -->
-
-
-<!-- <GridLayout rows="250" (tap)="onTakePictureTap()">
-    <Label row="0" width="160vw" backgroundColor="#C4C4C4" class="photo_danger" marginTop="30vh"></Label>
-    <Label text="&#xf030;" id="cameraProfil2" class="nt-icon fas" verticalAlignment="center"></Label>
-</GridLayout> -->
-
-
-<!-- <FlexboxLayout flexDirection="column" justifyContent="center">
-    <Label text="&#xf030;" class="nt-icon fas" id="cameraProfil"></Label>
-    <Label text="PRENDRE UNE PHOTO" id="cameraProfil2"></Label>
-</FlexboxLayout>  -->
-
-<GridLayout rows="80, 250">
-	<StackLayout orientation="horizontal" row="0" padding="10">
-		<Label row="0" text="saveToGallery"></Label>
-		<Switch row="0" [(ngModel)]="saveToGallery"></Switch>
+    <StackLayout>
+        <GridLayout rows="80, 250">
+            <StackLayout orientation="horizontal" row="0" padding="10">
+                <Label row="0" text="saveToGallery"></Label>
+                <Switch row="0" [(ngModel)]="saveToGallery"></Switch>
+            </StackLayout>
+            <!-- <Button text="Take Picture" (tap)="onTakePictureTap($event)" row="2" padding="10"></Button> -->
+            <Image row="1" [src]="cameraImage" stretch="fill" margin="200" width="200rem" height="300rem" backgroundColor="#C4C4C4"></Image>
+        </GridLayout>
+        <GridLayout rows="80">
+            <Button row="0" text="CHANGER LA PHOTO DE PROFIL" (tap)="onTakePictureTap($event)" class="btn btn-warning" tap="onAddImageTap()"></Button> 
+        </GridLayout>
+        <GridLayout rows="80">
+            <Button row="0" text="GESTION MOT DE PASSE" [nsRouterLink]="['/utilisateur/gestionmdp']" pageTransition="flip" class="btn btn-warning"></Button> 
+        </GridLayout>
+        <GridLayout rows="80">
+            <Button row="0" text="GESTION E-MAIL" [nsRouterLink]="['/utilisateur/gestionmail']" pageTransition="flip" class="btn btn-warning"></Button> 
+        </GridLayout>
     </StackLayout>
-    <!-- <Button text="Take Picture" (tap)="onTakePictureTap($event)" row="2" padding="10"></Button> -->
-	<Image row="1" [src]="cameraImage" stretch="fill" margin="200" width="200rem" height="300rem" backgroundColor="#C4C4C4"></Image>
-	
-</GridLayout>
-
-<GridLayout rows="80">
-    <Button row="0" text="CHANGER LA PHOTO DE PROFIL" (tap)="onTakePictureTap($event)" class="btn btn-warning" tap="onAddImageTap()"></Button> 
-</GridLayout>
-<GridLayout rows="80">
-    <Button row="0" text="GESTION MOT DE PASSE" [nsRouterLink]="['/utilisateur/gestionmdp']" pageTransition="flip" class="btn btn-warning"></Button> 
-</GridLayout>
-<GridLayout rows="80">
-    <Button row="0" text="GESTION E-MAIL" [nsRouterLink]="['/utilisateur/gestionmail']" pageTransition="flip" class="btn btn-warning"></Button> 
-</GridLayout>
-
-<!-- <BottomNavigation>
-    <TabStrip>
-        <TabStripItem>
-            <Label col="0" text="&#xf05a;" class="nt-icon fas"></Label>
-        </TabStripItem>
-        <TabStripItem>
-            <Label col="1" text="&#xf041;" class="nt-icon fas"></Label>
-        </TabStripItem>
-        <TabStripItem>
-            <Label col="2" text="&#xf3c5;" class="nt-icon fas"></Label>
-        </TabStripItem>
-    </TabStrip>
-</BottomNavigation> -->
-<!-- <GridLayout rows="*" columns="*,*,*">
-    <Label [nsRouterLink]="['/informations']" col="0" row="0" text="&#xf05a;" class="nt-icon fas" id="basDePage"></Label>
-    <Label [nsRouterLink]="['/danger']" col="1" row="0" text="&#xf071;" class="nt-icon fas" id="basDePage"></Label>
-    <Label [nsRouterLink]="['/sos']" col="2" row="0" text="&#xf479;" class="nt-icon fas" id="basDePage"></Label>
-</GridLayout> -->
-</StackLayout>
 </ScrollView>
 
 

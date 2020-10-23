@@ -10,8 +10,6 @@ import { HistoriqueSignalementComponent } from './historique-signalement/histori
 import { FicheSignalementComponent } from './fiche-signalement/fiche-signalement.component';
 import { AccueilDangerComponent } from './accueil-danger/accueil-danger.component';
 
-
-
 const routes: Routes = [{
   path: "", component: AccueilDangerComponent, children: [
     { path: "", component:CategorieComponent},
