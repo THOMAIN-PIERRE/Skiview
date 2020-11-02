@@ -1,4 +1,55 @@
-<ScrollView orientation="vertical">
+<Scrollview>
+<!-- <StackLayout>
+    
+
+    <GridLayout rows="auto, auto, auto," columns="*,*" marginBottom="30vh">
+        <Label text="Manteau neigeux" fontWeight="bold" row="0" col="0" colspan="2" fontSize="20" textAlignment="center" backgroundColor="#000000" color="yellow" marginRight="4vw" height="70"></Label>
+        <Label text="Hauteur de neige" fontWeight="bold" row="1" col="0" colspan="2" fontSize="20" textAlignment="center" backgroundColor="#000000" color="lightYellow" marginRight="4vw"></Label>
+                    
+        <Label text="Station" fontWeight="bold" fontSize="20" row="2" col="0" textAlignment="Center" backgroundColor="#000000" color="white" marginRight="4vw"></Label>
+        <Label text="Sommet" fontWeight="bold" fontSize="20" row="2" col="1" textAlignment="Center" backgroundColor="#000000" color="white"></Label>
+        <Label text="30 cm"  fontWeight="bold" fontSize="20" row="3" col="0" textAlignment="Center" backgroundColor="#000000" color="white" marginRight="4vw"></Label>
+        <Label text="110 cm" fontWeight="bold" fontSize="20" row="3" col="1" textAlignment="Center" backgroundColor="#000000" color="white" marginBottom="20vh"></Label>
+    </GridLayout> -->
+    <GridLayout>
+        
+        <ListView [items]="weather" class="list-group" marginBottom="30vh">
+            <ng-template let-forecast="item" marginBottom="30vh">
+                <GridLayout class="list-group-item" rows="auto, auto, 100, 50, 50, 50," columns="*,*" marginBottom="30vh">
+                    <Label text="{{ forecast.utcTime | date:'dd/MM/yyyy':'GMT' }}" fontSize="25rem" fontWeight="Bold" row="0" colspan="2" textAlignment="center" backgroundColor="#000000" color="yellow" marginTop="10vh"></Label>
+                    <image src="~/app/images/snow.png" row="1" col="0" rowspan="2" width="30%" height="8%" verticalAlignment="middle" backgroundColor="orange"></image>
+                    <Label text="Chute de neige" fontWeight="bold" fontSize="20" row="1" col="1" textAlignment="Center" backgroundColor="#000000" color="lightYellow" marginTop="14vw"></Label>
+                    <Label text="{{ forecast.snowFall }} cm" fontWeight="bold" fontSize="20" row="2" col="1" textAlignment="Center" backgroundColor="#000000" color="white"></Label>
+                    <!-- <Label text="10 cm" fontWeight="bold" fontSize="20" row="2" col="1" textAlignment="Center" backgroundColor="#000000" color="white"></Label> -->
+
+
+
+                   
+                    <Label text="Hauteur de neige" fontWeight="bold" row="3" col="0" colspan="2" fontSize="20" textAlignment="center" backgroundColor="#000000" color="lightYellow" marginRight="4vw"></Label>
+                    
+                    <Label text="Station" fontWeight="bold" fontSize="20" row="4" col="0" textAlignment="Center" backgroundColor="#000000" color="white" marginRight="4vw"></Label>
+                    <Label text="Sommet" fontWeight="bold" fontSize="20" row="4" col="1" textAlignment="Center" backgroundColor="#000000" color="white"></Label>
+                    <Label text="30 cm"  fontWeight="bold" fontSize="20" row="5" col="0" textAlignment="Center" backgroundColor="#000000" color="white" marginRight="4vw"></Label>
+                    <Label text="110 cm" fontWeight="bold" fontSize="20" row="5" col="1" textAlignment="Center" backgroundColor="#000000" color="white"></Label>
+
+
+                    <!-- <Label text="Sens du vent" fontWeight="bold" fontSize="20" row="5" col="0" textAlignment="Left" backgroundColor="#000000" color="white" marginRight="4vw"></Label>
+                    <Label text="{{ forecast.windDesc }}" fontWeight="bold" fontSize="20" row="5" col="1" textAlignment="Center" backgroundColor="#000000" color="white"></Label>
+                    <Label text="Index UV" fontWeight="bold" fontSize="20" row="6" col="0" textAlignment="Left" backgroundColor="#000000" color="white" marginRight="4vw"></Label>
+                    <Label text="{{ forecast.uvIndex }}" fontWeight="bold" fontSize="20" row="6" col="1" textAlignment="Center" backgroundColor="#000000" color="white"></Label>
+                    <Label text="Probabilité de précipitation" fontWeight="bold" fontSize="20" row="7" col="0" textAlignment="Left" backgroundColor="#000000" color="white" marginRight="4vw" textWrap="true" marginBottom="10vh"></Label>
+                    <Label text="{{ forecast.precipitationProbability }} %" fontWeight="bold" fontSize="20" row="7" col="1" textAlignment="Center" backgroundColor="#000000" color="white" height="60" marginBottom="10vh" verticalAlignment="middle"></Label> -->
+                    
+                    <Label text="{{ forecast.snowCover }}" row="9" col="1" class="p-x-5"></Label>
+
+                </GridLayout>
+            </ng-template>
+        </ListView>
+    </GridLayout>
+<!-- </StackLayout>    -->
+</Scrollview>
+
+<!-- <ScrollView orientation="vertical">
     <StackLayout>
         <GridLayout backgroundColor="white" class="encadre" borderRadius="10%" marginTop="2vh" marginBottom="25%" marginLeft="5%" marginRight="5%" rows="50,30" columns="*,*">
             <Label color="black" class="page__content-placeholder" text="CHUTE DE NEIGE" row="0" column="0" fontSize="20em"  fontWeight="Bold"></Label>
@@ -7,7 +58,7 @@
                 fontSize="15em"></Label>
             <Label color="black" class="page__content-placeholder" fontSize="15em" text="5cm" row="1" column="1"></Label>
         </GridLayout>
-        <GridLayout backgroundColor="white" class="encadre" borderRadius="10%" marginTop="2vh"marginBottom="25%" marginLeft="5%" marginRight="5%" rows="50,30,30,30" columns="*,*,*">
+        <GridLayout backgroundColor="white" class="encadre" borderRadius="10%" marginTop="2vh" marginBottom="25%" marginLeft="5%" marginRight="5%" rows="50,30,30,30" columns="*,*,*">
             <Label color="black" class="page__content-placeholder" text="HAUTEUR DE NEIGE" row="0" column="0" colspan="2" fontSize="20em" fontWeight="Bold"></Label>
              <Label row="1" column="0" colspan="2" rowspan="3" class="iconemont" text="A"></Label> 
             <Label color="black" class="page__content-placeholder" text="300cm|2500m" fontSize="15em" row="1" column="3" fontWeight="Bold"></Label>
@@ -16,11 +67,11 @@
         </GridLayout>
         <GridLayout backgroundColor="white" class="encadre" borderRadius="10%" marginTop="2vh" marginBottom="25%" marginLeft="5%" marginRight="5%" rows="50,30,30,30" columns="*,*,*">
             <Label color="black" class="page__content-placeholder" text="RISQUE AVALANCHE" fontSize="20em" row="0" column="0" colspan="2" fontWeight="Bold"></Label>
-            <!-- <Image row="1" column="0" colspan="3"  src="https://www.afnor.org/wp-content/uploads/2017/01/limit%C3%A9-150x150.jpg"></Image>  -->
-            <Label color="black" class="page__content-placeholder" text="Risque:2/5" row="2" column="1" fontWeight="Bold"></Label>
+            <Label color="black" class="page__content-placeholder" text="2/5" row="2" column="1" fontWeight="Bold"></Label>
         </GridLayout>
     </StackLayout>
-</ScrollView>
+</ScrollView> -->
+
 <GridLayout verticalAlignment="bottom">
     <GridLayout columns="*, *, *" height="70"  backgroundColor="#FFFF00">
         <GridLayout  col="0" #tabHighlight>

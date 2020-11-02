@@ -19,7 +19,8 @@ public constructor(private http:HttpClient) {
 }
 
 public  ngOnInit(): void {
-  this.getweather({ latitude: 43.18793, longitude: -0.629484 });
+  // this.getweather({ latitude: 43.18793, longitude: -0.629484 });
+  this.getweather({ latitude: 43.1717251, longitude: -0.6063067 });
   }
 public getweather(position:any){
   let params= new HttpParams({

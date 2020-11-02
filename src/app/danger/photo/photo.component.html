@@ -1,24 +1,27 @@
 <ScrollView>
     <StackLayout>
 <GridLayout verticalAlignment="top">
-    <GridLayout columns="*, *, *" height="50"  backgroundColor="#000000">
-        <GridLayout  col="0" #tabHighlight>
-        </GridLayout>
-        <GridLayout col="0" backgroundColor="#000000">
+    <GridLayout columns="*, *" height="50"  backgroundColor="#000000">
+        <!-- <GridLayout col="0" backgroundColor="#000000">
             <Label text="sauver dans galerie" color="#FFFF00" ></Label>
             <Switch [(ngModel)]="saveToGallery" color="#FFFFFF"></Switch>
+        </GridLayout> -->
+        <GridLayout col="0" backgroundColor="#000000">
+            <Label text="&#xf030;" (tap)="onTakePictureTap()" class="nt-icon fas" horizontalAlignment="left" paddingLeft="60%"></Label>
         </GridLayout>
         <GridLayout col="1" backgroundColor="#000000">
-            <Label text="&#xf030;" (tap)="onTakePictureTap($event)" class="nt-icon fas"></Label>
-        </GridLayout>
-        <GridLayout col="2" backgroundColor="#000000">
-            <Label text="0/1" color="#FFFF00" fontSize="30rem"></Label>
+            <Label text="0/1" color="#FFFF00" fontSize="30rem" horizontalAlignment="right" paddingRight="60%"></Label>
         </GridLayout>
     </GridLayout>
 </GridLayout>
 <GridLayout>
     <!-- <Label text="Effacer l'image" color="#000000" ></Label>   -->
-    <Image row="1" [src]="cameraImage" stretch="fill" width="300rem" height="350rem" margin="20rem"></Image>  
+    <!-- <Image row="1" [src]="cameraImage" stretch="fill" width="100rem" height="350rem" margin="20rem"></Image>  -->
+    <Image row="1" [src]="cameraImage" stretch="none" margin="20rem" horizontalAlignment="center"></Image>
+</GridLayout>
+<GridLayout>
+    <!-- <Label text="&#xf1f8;" color="#000000" class="nt-icon fas" horizontalAlignment="center" (tap)="onTakePictureTap()"></Label> -->
+    <Label text="MODIFIER L'IMAGE" color="#000000" horizontalAlignment="center" (tap)="onTakePictureTap()" fontWeight="bold" fontSize="20rem" textDecoration="underline"></Label>  
 </GridLayout> 
 </StackLayout>
 </ScrollView>  
@@ -34,6 +37,8 @@
         </GridLayout>
     </GridLayout>
 </GridLayout>
+
+
 
 
 

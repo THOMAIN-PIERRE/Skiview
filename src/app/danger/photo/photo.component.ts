@@ -13,10 +13,11 @@ export class PhotoComponent {
 
     constructor() { }
 
+    //La photo est stockée dans la gallerie de l'appareil par défaut (boolean = true)
     public saveToGallery: boolean = true;
     public cameraImage: ImageAsset;
 
-    onTakePictureTap(args) {
+    onTakePictureTap() {
         requestPermissions().then(
             () => this.capture(),
             () => alert('permissions rejected')
@@ -24,26 +25,26 @@ export class PhotoComponent {
     }
 
     capture() {
-        takePicture({ width: 250, height: 300, keepAspectRatio: true, saveToGallery: this.saveToGallery })
-            .then((imageAsset: any) => {
-                this.cameraImage = imageAsset;
-                imageAsset.getImageAsync(function (nativeImage) {
-                    let scale = 1;
-                    let height = 0;
-                    let width = 0;
-                    if (imageAsset.android) {
-                        // get the current density of the screen (dpi) and divide it by the default one to get the scale
-                        scale = nativeImage.getDensity() / imageAsset.android.util.DisplayMetrics.DENSITY_DEFAULT;
-                        height = imageAsset.options.height;
-                        width = imageAsset.options.width;
-                    } else {
-                        scale = nativeImage.scale;
-                        width = nativeImage.size.width * scale;
-                        height = nativeImage.size.height * scale;
-                    }
-                    console.log(`Displayed Size: ${width}x${height} with scale ${scale}`);
-                    console.log(`Image Size: ${width / scale}x${height / scale}`);
-                });
+        takePicture({ width: 150, height: 280, keepAspectRatio: true, saveToGallery: this.saveToGallery })
+            .then((ImageAsset: any) => {
+                this.cameraImage = ImageAsset;
+                // ImageAsset.getImageAsync(function (nativeImage) {
+                //     let scale = 1;
+                //     let height = 0;
+                //     let width = 0;
+                    // if (ImageAsset.android) {
+                    //     // get the current density of the screen (dpi) and divide it by the default one to get the scale
+                    //     scale = nativeImage.getDensity() / ImageAsset.android.util.DisplayMetrics.DENSITY_DEFAULT;
+                    //     height = ImageAsset.options.height;
+                    //     width = ImageAsset.options.width;
+                    // } else {
+                    //     scale = nativeImage.scale;
+                    //     width = nativeImage.size.width * scale;
+                    //     height = nativeImage.size.height * scale;
+                    // }
+                    // console.log(`Displayed Size: ${width}x${height} with scale ${scale}`);
+                    // console.log(`Image Size: ${width / scale}x${height / scale}`);
+                // });
             }, (error) => {
                 console.log("Error: " + error);
             });
@@ -56,8 +57,8 @@ export class PhotoComponent {
 //     camera.requestPermissions().then(
 //         function success() {
 //             camera.takePicture({
-//               width: 700,
-//               height: 1000,
+//               width: 250,
+//               height: 300,
 //               keepAspectRatio: true})
 //         }, 
 //         function failure() {

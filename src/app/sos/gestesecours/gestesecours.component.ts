@@ -34,9 +34,6 @@ export class GestesecoursComponent implements OnInit {
         titre: "Cas N°5: Les brulures",
         img: "https://i.pinimg.com/564x/4f/f6/af/4ff6af705cb1d717b802ec73ddd57065.jpg"
       }
-
     ]
-
   }
-
 }

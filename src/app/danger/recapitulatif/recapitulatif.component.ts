@@ -2,6 +2,7 @@ import { Component, OnInit, NgZone } from '@angular/core';
 import * as geolocation from "nativescript-geolocation";
 import { Accuracy } from "tns-core-modules/ui/enums"; // used to describe at what accuracy the location should be get
 
+
 @Component({
   selector: 'ns-recapitulatif',
   templateUrl: './recapitulatif.component.html',
@@ -21,17 +22,17 @@ export class RecapitulatifComponent implements OnInit {
   //   })
   // }
 
-  
+
     public latitude: number;
     public longitude: number;
-    private watchId: number;
+    // private watchId: number;
   
-    public constructor(private zone: NgZone) {
+    public constructor() {
         this.latitude = 0;
         this.longitude = 0;
     }
   ngOnInit(): void {
-    throw new Error("Method not implemented.");
+    // throw new Error("Method not implemented.");
   }
   
     private getDeviceLocation(): Promise<any> {
@@ -54,8 +55,4 @@ export class RecapitulatifComponent implements OnInit {
             console.error(error);
         });
     }
-
-
-
-
 }

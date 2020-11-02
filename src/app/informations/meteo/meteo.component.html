@@ -1,16 +1,30 @@
+<!-- <Label color="black" class="page__content-placeholder" text="PREVISIONS METEO A 7 JOURS" fontWeight="Bold" horizontalAlignment="center"></Label> -->
 <Scrollview>
     <GridLayout>
+        <!-- <Label color="black" class="page__content-placeholder" text="PREVISIONS METEO A 7 JOURS" fontWeight="Bold" horizontalAlignment="center"></Label> -->
         <ListView [items]="weather" class="list-group">
             <ng-template let-forecast="item">
-                <GridLayout class="list-group-item" rows="50, 50, 50, 50" columns="*,*">
-                    <Label color="black" class="page__content-placeholder" text="Previsionnelle pour le:" row="0" column="0"
-                    colspan="2" fontWeight="Bold"></Label>
-                    <Label text="{{ forecast.weekday }}" marginLeft="33%" fontSize="25em" fontWeight="Bold" row="1" col="0" 
-                    colspan="2"></Label>
-                    <Image [src]="forecast.iconLink"  row="2" col="0"></Image>
-                    <Image [src]="forecast.iconLink"  row="2" col="1"></Image>
-                    <Label text=" {{ forecast.lowTemperature }} °C" marginLeft="15%"row="3" col="0"></Label>
-                    <Label text="{{ forecast.highTemperature }} °C"marginLeft="15%" row="3" col="1"></Label>
+                <GridLayout class="list-group-item" rows="auto, auto, 100, 50, 50, 50, 50, 70, 50," columns="*,*">
+                    <!-- <Label color="black" class="page__content-placeholder" text="PREVISIONS METEO A 7 JOURS" row="0" column="0" colspan="2" fontWeight="Bold" horizontalAlignment="center"></Label> -->
+                    <Label text="{{ forecast.utcTime | date:'dd/MM/yyyy':'GMT' }}" fontSize="25rem" fontWeight="Bold" row="0" colspan="2" textAlignment="center" backgroundColor="#000000" color="yellow" marginTop="10vh"></Label>
+                    <Label text="{{ forecast.barometerPressure }} hPa" row="1" fontSize="20rem" fontWeight="Bold" colspan="2" textAlignment="center" marginBottom="2vh"></Label>
+                    <Image [src]="forecast.iconLink"  row="2" col="0" width="170" height="100" backgroundColor="black" marginRight="4vw"></Image>
+                    <!-- <Label text="{{ forecast.iconName }}" row="4" col="0" fontWeight="bold" marginLeft="15%"row="4" col="0" fontSize="20"></Label>
+                    <Label text="{{ forecast.icon }}" row="5" col="0" fontWeight="bold" marginLeft="15%"row="4" col="0" fontSize="20"></Label> -->
+                    <Image [src]="forecast.iconLink"  row="2" col="1" width="170" height="100" backgroundColor="black"></Image>
+                    <Label text="Min : {{ forecast.lowTemperature }} °C" fontWeight="bold" row="3" col="0" fontSize="20" textAlignment="center" backgroundColor="#000000" color="yellow" marginRight="4vw"></Label>
+                    <Label text="Max : {{ forecast.highTemperature }} °C" fontWeight="bold" row="3" col="1" fontSize="20" textAlignment="center" backgroundColor="#000000" color="yellow"></Label>
+                    
+                    <Label text="Vitesse du vent" fontWeight="bold" fontSize="20" row="4" col="0" textAlignment="Left" backgroundColor="#000000" color="white" marginRight="4vw" marginTop="15vh"></Label>
+                    <Label text="{{ forecast.windSpeed }} km/h" fontWeight="bold" fontSize="20" row="4" col="1" textAlignment="Center" backgroundColor="#000000" color="white" marginTop="15vh"></Label>
+                    <Label text="Sens du vent" fontWeight="bold" fontSize="20" row="5" col="0" textAlignment="Left" backgroundColor="#000000" color="white" marginRight="4vw"></Label>
+                    <Label text="{{ forecast.windDesc }}" fontWeight="bold" fontSize="20" row="5" col="1" textAlignment="Center" backgroundColor="#000000" color="white"></Label>
+                    <Label text="Index UV" fontWeight="bold" fontSize="20" row="6" col="0" textAlignment="Left" backgroundColor="#000000" color="white" marginRight="4vw"></Label>
+                    <Label text="{{ forecast.uvIndex }}" fontWeight="bold" fontSize="20" row="6" col="1" textAlignment="Center" backgroundColor="#000000" color="white"></Label>
+                    <Label text="Probabilité de précipitation" fontWeight="bold" fontSize="20" row="7" col="0" textAlignment="Left" backgroundColor="#000000" color="white" marginRight="4vw" textWrap="true" marginBottom="10vh"></Label>
+                    <Label text="{{ forecast.precipitationProbability }} %" fontWeight="bold" fontSize="20" row="7" col="1" textAlignment="Center" backgroundColor="#000000" color="white" height="60" marginBottom="10vh" verticalAlignment="middle"></Label>
+                    
+
                 </GridLayout>
             </ng-template>
         </ListView>
