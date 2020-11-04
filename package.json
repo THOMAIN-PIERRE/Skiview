@@ -1,6 +1,6 @@
 {
   "nativescript": {
-    "id": "org.nativescript.skiviewV3",
+    "id": "org.nativescript.Skiview",
     "tns-android": {
       "version": "6.5.0"
     },
